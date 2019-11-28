@@ -1,0 +1,643 @@
+% Exercise 1 - Group 16
+% Startup
+clc
+clear
+close all
+tic;
+maxtiter = 15; % Max Time per iteration
+maxniter = 50; % Max Number of iterations
+maxtime  = 6000; % Maximum total time
+plots_on = 0; 
+%% Preprocess
+% ---- Constants ----
+nodes = 24; % Number of airports
+ndseu = 20; % Number of nodes within the EU
+nacft = 5;  % Number of aircraft types
+naceu = 3;  % Number of aircraft used within the EU
+fuelc = 1.6; % Fuel costs
+ldfeu = 0.75; % Load factor for EU flights
+ldfus = 0.85; % Load factor for US flights
+avgut = 70;   % Average Utilisation time of the aircraft
+yrpkc = 0.05; % Constant yield per rpk for US flights
+mxcap = 7500; % Maximum capacity to the US
+feecl = 8000; % Lease cancel fee
+feenl = 2000; % New lease fee
+ams = 1.0; bms =1.7; % Market share parameters
+relax = 1.0; % Relaxation factor for demand convergence (> 0.5 so rounds to objective)
+% ---- Read Data From Excel ----
+fprintf('Reading data from Excel file\n')
+% Airport Data
+apdat.lat = xlsread('input16_Ex3.xlsx',2,'C6:Z6'); % Latitude
+apdat.lon = xlsread('input16_Ex3.xlsx',2,'C7:Z7'); % Longitude
+apdat.rwl = xlsread('input16_Ex3.xlsx',2,'C8:Z8'); % Runway length
+apdat.slt = [1000 xlsread('input16_Ex3.xlsx',2,'D9:Z9')]; % Available slots
+[~, tags] = xlsread('input16_Ex3.xlsx',2,'C5:Z5');
+
+% Aircraft Data
+acrft.num = xlsread('input16_Ex3.xlsx',2,'B12:F12'); % Available aircraft
+acrft.vel = xlsread('input16_Ex3.xlsx',3,'B2:F2'); % Cruise speed
+acrft.sts = xlsread('input16_Ex3.xlsx',3,'B3:F3'); % Seats available
+acrft.tat = xlsread('input16_Ex3.xlsx',3,'B4:F4'); % Turn-around time
+acrft.rng = xlsread('input16_Ex3.xlsx',3,'B5:F5'); % Range
+acrft.rwl = xlsread('input16_Ex3.xlsx',3,'B6:F6'); % Runway length required
+acrft.cl  = xlsread('input16_Ex3.xlsx',3,'B7:F7'); % Weekly lease costs
+acrft.cx  = xlsread('input16_Ex3.xlsx',3,'B8:F8'); % Fixed operating costs
+acrft.ct  = xlsread('input16_Ex3.xlsx',3,'B9:F9'); % Time costs parameter
+acrft.cf  = xlsread('input16_Ex3.xlsx',3,'B10:F10'); % Fuel costs parameter
+
+% Demand matrix
+dmndh = xlsread('input16_Ex3.xlsx',2,'C37:Z60');
+dmndl = xlsread('input16_Ex3.xlsx',2,'C63:Z86');
+
+% Competition Frequency matrix
+freqc = xlsread('input16_Ex3.xlsx',2,'C89:Z112');
+
+% Starting frequency matrix
+freq0 = xlsread('input16_Ex3.xlsx',4,'B54:Y77') + ...
+    xlsread('input16_Ex3.xlsx',4,'B80:Y103') + ...
+    xlsread('input16_Ex3.xlsx',4,'B106:Y129') + ...
+    xlsread('input16_Ex3.xlsx',4,'B132:Y155') + ...
+    xlsread('input16_Ex3.xlsx',4,'B158:Y181');
+
+
+fprintf('Excel file read\n')
+% ---- Preprocess the data ----
+fprintf('\nProcessing the data\n');
+% Construct matrix with distances from i to j
+distm = zeros(nodes,nodes); % Initialisation
+for j = 1:nodes
+    for i = 1:(j-1) % The matrix is symmetric
+        % Distance from arc formula
+        distm(i,j) = 6371*2*asin(sqrt(...
+            sind(0.5*(apdat.lat(i)-apdat.lat(j)))^2 +...
+            cosd(apdat.lat(i)) * cosd(apdat.lat(j)) * ...
+            sind(0.5*(apdat.lon(i)-apdat.lon(j)))^2));
+        distm(j,i) = distm(i,j);
+    end
+end
+
+% Construct Revenue matrix
+yrpkm = 5.9.*distm.^-0.76 + 0.043; % RPK matrix
+for i = 1:nodes % Symmetric matrix
+    if i > ndseu % fixed yield per rpk to the US
+        yrpkm(:,i) = ones(nodes,1)*yrpkc;
+        yrpkm(i,:) = ones(1,nodes)*yrpkc;
+    end
+    yrpkm(i,i) = 0; % Passengers from i to i generate no revenue
+
+end
+rvnum = distm.*yrpkm; % Revenue per passenger from i to j
+
+% Construct Cost Matrix
+costm = zeros(nodes, nodes, nacft); % Initialisation
+for k = 1:nacft
+    for j = 1:nodes
+        for i = 1:(j-1) % Symmetric matrix
+            % Fixed Operating Costs
+            cfixd = acrft.cx(k);
+            % Time-based costs
+            ctime = acrft.ct(k)/acrft.vel(k)*distm(i,j);
+            % Fuel costs
+            cfuel = 0.666666667*acrft.cf(k)*distm(i,j)*fuelc;
+            % Sum of the costs
+            costm(i,j,k) = cfixd + cfuel + ctime;
+            if i == 1 || j == 1
+                costm(i,j,k) = 0.7*costm(i,j,k);
+            end
+            costm(j,i,k) = costm(i,j,k);
+        end
+        costm(j,j,k) = 1e6; % Prevent the optimizer from scheduling flights from A to A
+    end
+end
+
+% Lease cost matrix
+lease = acrft.cl';
+
+% Turn-around time matrix
+ltotm = zeros(nodes, nodes, nacft); % Initialisation
+for k = 1:nacft
+    for j = 1:nodes
+        for i = 1:nodes % Non-Symmetric matrix
+            if (j == 1)
+                ltotm(i,j,k) = max(2*acrft.tat(k)/60, 1);
+            else
+                ltotm(i,j,k) = acrft.tat(k)/60;
+            end
+        end
+    end
+end
+
+% Contruct Demand matrix using market share
+demnd = zeros(nodes, nodes, 2);
+freqh = freq0;
+freql = freq0;
+
+for j = 1:nodes
+    for i = 1:nodes
+        
+        % High Season
+        % Total offer between i and j
+        % If there is no service, we assume we open a new connecting
+        % service to avoid MS = NaN and ms = 0.
+        ftot = freqh(i,j) +  max([min([freqh(i,1) freqh(1,j)]) 1]) + freqc(i,j);
+        fs1d = freqh(i,j)/ftot; % Direct Flights frequency share
+        fs1i = max([min([freqh(i,1) freqh(1,j)]) 1])/ftot; % Connecting FS
+        fs2  = freqc(i,j)/ftot; % Competition FS
+        ms   = (fs1d^ams + fs1i^bms)/(fs1d^ams + fs1i^bms + fs2^ams); % Market Share
+        demnd(i,j,1) = round(dmndh(i,j)*ms); % Demand adjusted with Market Share
+        
+        % Low Season
+        ftot = freql(i,j) +  max([min([freqh(i,1) freqh(1,j)]) 1]) + freqc(i,j);
+        fs1d = freql(i,j)/ftot; % Direct Flights frequency share
+        fs1i = max([min([freql(i,1) freql(1,j)]) 1])/ftot; % Connecting FS
+        fs2  = freqc(i,j)/ftot; % Competition FS
+        ms   = (fs1d^ams + fs1i^bms)/(fs1d^ams + fs1i^bms + fs2^ams); % Market Share
+        demnd(i,j,2) = round(dmndl(i,j)*ms); % Demand adjusted with Market Share
+    end
+end
+
+%% C-Plex Setup
+% ---- Objective Function ----
+% Structure of the decission variable vector
+% [newl_k cancel_k;
+% ... xij (direct pax) wij (connecting pax) zijk (flights offered) HIGH SEASON]
+% ... xij (direct pax) wij (connecting pax) zijk (flights offered) LOW SEASON]
+
+% function to translate i-j-k index to dv index
+clear i j k% First 5 variables are for planes
+varindex = @(i, j, k, s) 2*nacft + ((2+nacft)*nodes^2)*(s-1) + ... % High season and low season
+    (i + (j-1)*nodes)*(k == -1) + ... % locates X_ij if k == -1
+    (nodes^2 + i + (j-1)*nodes)*(k == 0) + ...  % locates W_ij if k == 0
+    (2*nodes^2 + i + (j - 1)*nodes + (k - 1)*nodes^2)*(k > 0); % Locates Z_ijk if k > 0
+
+% Define the CPLEX model
+model             =   'MCF_Model';
+cplex             =   Cplex(model);
+cplex.Model.sense =   'maximize';
+
+% Objective function and bounds
+% Maximize YIELD - COST
+obj = [-lease - feenl; % Leasing costs (negative for new leases) - fees
+    lease - feecl;    % Leasing costs (positive for new leases) - fees
+    reshape(rvnum, nodes^2, 1); % Yield per passenger in route i,j HS
+    reshape(rvnum, nodes^2, 1); % Yield per passenger in route i,j HS
+    -reshape(costm, nacft*nodes^2,1); % Operating Costs HS
+    reshape(rvnum, nodes^2, 1); % Yield per passenger in route i,j LS
+    reshape(rvnum, nodes^2, 1); % Yield per passenger in route i,j LS
+    -reshape(costm, nacft*nodes^2,1)]; % Operating Costs LS
+
+nvars = length(obj);
+
+% Type of DVs - Integer
+ctype = char(ones(1,nvars) * ('I')); % Integer
+
+% Array with DV names
+namedv = zeros(nvars,11);
+for i = 1:nacft
+    namedv(i,:) = ['AC_' num2str(i,'%01d') '_newlea'];
+    namedv(i+nacft,:) = ['AC_' num2str(i,'%01d') '_cnllea'];
+end
+
+for k = -1:nacft
+    for j = 1:nodes
+        for i = 1:nodes
+            for s = 1:2
+                idx = varindex(i, j, k, s);
+                if k == -1
+                    namedv(idx,1:9) =  ['X_' num2str(i,'%02d') ',' num2str(j,'%02d') '__'];
+                elseif k == 0
+                    namedv(idx,1:9) =  ['W_' num2str(i,'%02d') ',' num2str(j,'%02d') '__'];
+                else
+                    namedv(idx,1:9) =  ['Z_' num2str(i,'%02d') ',' num2str(j,'%02d') '_' num2str(k,'%01d')];
+                end
+                if s == 1
+                    namedv(idx,10:11) = '_H';
+                else
+                    namedv(idx,10:11) = '_L';
+                end
+            end
+        end
+    end
+end
+namedv = char(namedv);
+
+% Bounds
+lb = zeros(nvars,1);
+ub = inf(nvars,1);
+
+% Upper bound for lease cancellations
+for i = 1 : nacft
+    ub(nacft+i) = acrft.num(i); % Maximum cancelations = available aircraft
+end
+
+% Add objective to cplex
+cplex.addCols(obj, [], lb, ub, ctype, namedv);
+
+% ---- Constraints ----
+% List of constraints of the problem
+% - Demand
+% - Transfer passengers - not to or from the hub
+% - Flight Capacity + Range
+% - Utilization time - MODIFIED FROM 1
+% - Flights in and out each node
+% - Slots
+% - Only 6 freedoms to US - only possible to fly to the US from the hub
+% - Aircraft 4 and 5 not for european legs
+% - Maximum weekly capaity to the US
+
+% ALL CONSTRAINTS FOR HIGH AND LOW SEASON
+fprintf('Adding Constraints\n');
+for s = 1:2
+    smark = 'H'*(s==1)+'L'*(s>1); % String to mark season
+    % Capacity constraint + Range and Runway Length + Aircraft type restriction
+    % + Freedoms of the air
+    for j = 1:nodes
+        for i = 1:nodes
+            C3 = zeros(1, nvars);       %Setting coefficient matrix with zeros
+            % x_ij + sum(w_im,m)*(1-gj) + sum(w_mj,m)*(1-gi) - sum(z_ijk * s_k * lf,k) <= 0
+            % if d_ij >= range_k, cap_ijk = 0
+            C3(varindex(i, j,-1,s)) = 1;  % x_ij
+            if (j == 1) % Only add hub capacity terms if one of the points is a hub
+                for m = 1:nodes
+                    C3(varindex(i, m, 0, s)) = 1;  % w_im* (1 - gj)
+                end
+            end
+            if (i == 1) % Only add hub capacity terms if one of the points is a hub
+                for m = 1:nodes
+                    C3(varindex(m, j, 0, s)) = 1;  % w_mj* (1 - gi)
+                end
+            end
+            for k = 1:nacft
+                % Implement extra constraints in the capacity, if they are not
+                % met, no passengers can fly that route (and the optimizer will
+                % not allocate flights)
+                
+                % Freedoms of the air - flights to the US only from the hub
+                frd_c = ((j <= ndseu) && (i <= ndseu)) || (i == 1) || (j == 1); % 1 if the flight is inside the EU or goes to the hub
+                % Aircraft type - 4 and 5 cannot fly inside the US
+                act_c = (j > ndseu) || (i > ndseu) || (k <= naceu); % 0 only if k=4,5 and flying from and to EU
+                % Runway legth
+                rwy_c = (apdat.rwl(i) >= acrft.rwl(k)) && (apdat.rwl(j)>= acrft.rwl(k)); % 1 if the runway is long enough
+                % Range
+                dst_c = (distm(i,j) <= acrft.rng(k)); % 1 if the distance is between range
+                
+                % All constraints together
+                all_c = rwy_c && dst_c && frd_c && act_c;
+                if (all_c) % If the constraints are not met, capacity is 0
+                    % Load factor: EU if i and j in EU, US if i or j in US
+                    loadf = ldfeu + (ldfus-ldfeu)*((i > ndseu) || (j > ndseu));
+                    C3(varindex(i, j, k, s)) = -loadf*acrft.sts(k);
+                end
+            end
+            cplex.addRows(-Inf, C3, 0, sprintf('Capacity%d_%d_%s',i,j,smark));
+        end
+    end
+    
+    % Balance constraint  
+    for k = 1:nacft
+        for i = 1:nodes
+            C4 = zeros(1, nvars);       %Setting coefficient matrix with zeros
+            % sum(z_ijk,j) == sum(z_jik,j)
+            for j = 1:nodes
+                C4(varindex(i, j, k, s)) =  1;  % z_ij
+                C4(varindex(j, i, k, s)) = -1;  % z_ij
+            end
+            cplex.addRows(0, C4, 0, sprintf('Balance%d_%d_%s',i,j,smark));
+        end
+    end
+    
+    % Utilisation Constraint
+    for k = 1:nacft
+        C5 = zeros(1, nvars);       %Setting coefficient matrix with zeros
+        % sum(d_ij/v_k + LTO_ijk, i,j) - avgut*(AC0_k + newl_k - cancell_k) <= 0
+        C5(k) = -avgut;
+        C5(k+nacft) = avgut;
+        for i = 1:nodes
+            for j = 1:nodes
+                C5(varindex(i, j, k, s)) = distm(i,j)/acrft.vel(k) + ltotm(i,j,k);
+            end
+        end
+        cplex.addRows(-Inf, C5, avgut*acrft.num(k), sprintf('Utilisation%d_%s',k,smark));
+    end
+    
+    % - Slots
+    for i = 2:nodes % Hub is 1, no constraint there
+        C6 = zeros(1, nvars);       %Setting coefficient matrix with zeros
+        % Sum(Sum(z_ijk),j,k) <= available slots
+        for j = 1:nodes % All destinations
+            for k = 1:nacft % All aircraft types
+                C6(varindex(j, i, k, s)) = 1;
+            end
+        end
+        cplex.addRows(0, C6, apdat.slt(i), sprintf('Slots%d',i));
+    end
+    
+    % - Maximum weekly capacity to the US
+    % Only two constraints here - from EU to US and from US to EU
+    C7 = zeros(1, nvars); %Setting coefficient matrix with zeros
+    C8 = zeros(1, nvars); %Setting coefficient matrix with zeros
+    for i = ndseu+1:nodes % Flights from the us
+        % Sum(Sum(z_ijk)*seats(k),i,j,k) <= maximum allowed capacity
+        for j = 1:nodes % All destinations - even though only j=1 has z_ij != 0
+            for k = 1:nacft % All aircraft types
+                C7(varindex(i, j, k, s)) = acrft.sts(k);
+                C8(varindex(j, i, k, s)) = acrft.sts(k);
+            end
+        end
+    end
+    cplex.addRows(0, C7, mxcap, sprintf('MaxCap1_%s',smark));
+    cplex.addRows(0, C8, mxcap, sprintf('MaxCap2_%s',smark));
+end
+
+for s = 1:2
+    % Demand and hub constraints last as they are modified every iteration
+    % LAST FOR CONVENIENCE
+    smark = 'H'*(s==1)+'L'*(s>1); % String to mark season
+    % Demand constraint
+    for i = 1:nodes
+        for j = 1:nodes
+            C1 = zeros(1, nvars);       %Setting coefficient matrix with zeros
+            % x_ij + w_ij <= dem_ij
+            C1(varindex(i, j,-1, s)) = 1; % x_ij_H
+            C1(varindex(i, j, 0, s)) = 1; % w_ij_H
+            cplex.addRows(0, C1, demnd(i,j,s),sprintf('Demand%d_%d_%s',i,j,smark));
+        end
+    end
+    
+    % Transfer Passengers constraint
+    for i = 1:nodes
+        for j = 1:nodes
+            C2 = zeros(1, nvars);       %Setting coefficient matrix with zeros
+            % w_ij <= dem_ij*hub!
+            % High Season
+            C2(varindex(i, j, 0, s)) = 1;  % w_ij
+            g = 1 - 1*((i == 1) || (j == 1));
+            cplex.addRows(0, C2, g*demnd(i,j,s),sprintf('IsHub%d_%d_%s',i,j,smark));
+        end
+    end
+end
+nrows = size(cplex.Model.rowname,1);
+ncnst = 4*nodes^2; %C1: nodes^2 * H/L season + C2: nodes^2 * H/L season 
+
+% ---- Execute model
+fprintf('Starting iterations\n');
+cplex.Param.mip.limits.nodes.Cur    = 1e+8;   % max number of nodes
+cplex.Param.timelimit.Cur           = maxtiter;   % max time in
+cplex.DisplayFunc                   = []; % Hide cplex logs
+
+%   Run CPLEX
+cplex.solve();
+cplex.writeModel(['LPfiles\' model '1.lp']);
+sol  = cplex.Solution.x;
+
+%% Iterate
+ms = zeros(nodes);
+ms2= zeros(nodes);
+iter = 1;
+while (toc <= (maxtime-maxtiter)) && (iter < maxniter)
+    iter = iter + 1;
+    % Update frequency matrices
+    fh0 = freqh;
+    fl0 = freql;
+    fh1 = sum(reshape(sol(varindex(1,1,1,1):varindex(nodes,nodes,nacft,1)),nodes,nodes,nacft),3);
+    fl1 = sum(reshape(sol(varindex(1,1,1,2):varindex(nodes,nodes,nacft,2)),nodes,nodes,nacft),3);
+    err = sqrt(sum(sum(sum((fh1-fh0).^2 + (fl1-fl0).^2)))/sum(sum(sum(fh1.^2 + fl1.^2)))); % Error in frequency
+    fprintf('Iteration %2d \t Time %5.2f s\t\t Error %4.2f %%\n',iter-1, toc, err*100);
+    if err <= 1e-4
+        fprintf('CONVERGED\n');
+        break
+    end
+    % Update the frequency using the relaxation factor
+    freqh = round(fh0 + relax*(fh1-fh0));
+    freql = round(fl0 + relax*(fl1-fl0));
+    % Update demand matrix
+    for j = 1:nodes
+        for i = 1:nodes
+
+            % High Season
+            % Total offer between i and j
+            ftot = freqh(i,j) +  max([min([freqh(i,1) freqh(1,j)]) 1]) + freqc(i,j);
+            fs1d = freqh(i,j)/ftot; % Direct Flights frequency share
+            fs1i = max([min([freqh(i,1) freqh(1,j)]) 1])/ftot; % Connecting FS
+            fs2  = freqc(i,j)/ftot; % Competition FS
+            ms(i,j) = (fs1d^ams + fs1i^bms)/(fs1d^ams + fs1i^bms + fs2^ams); % Market Share
+            demnd(i,j,1) = round(dmndh(i,j)*ms(i,j)); % Demand adjusted with Market Share
+
+            % Low Season
+            ftot = freql(i,j) +  max([min([freql(i,1) freql(1,j)]) 1]) + freqc(i,j);
+            fs1d = freql(i,j)/ftot; % Direct Flights frequency share
+            fs1i = max([min([freql(i,1) freql(1,j)]) 1])/ftot; % Connecting FS
+            fs2  = freqc(i,j)/ftot; % Competition FS
+            ms2(i,j) = (fs1d^ams + fs1i^bms)/(fs1d^ams + fs1i^bms + fs2^ams); % Market Share
+            demnd(i,j,2) = round(dmndl(i,j)*ms2(i,j)); % Demand adjusted with Market Share
+        end
+    end
+    
+    % Remove Constraints from original cplex model
+    cplex.delRows((nrows-ncnst+1):1:nrows);
+    % Add new constraints
+    % Demand constraint
+    for s = 1:2
+        smark = 'H'*(s==1)+'L'*(s>1); % String to mark season
+        for i = 1:nodes
+            for j = 1:nodes
+                C1 = zeros(1, nvars);       %Setting coefficient matrix with zeros
+                % x_ij + w_ij <= dem_ij
+                C1(varindex(i, j,-1, s)) = 1; % x_ij_H
+                C1(varindex(i, j, 0, s)) = 1; % w_ij_H
+                cplex.addRows(0, C1, demnd(i,j,s),sprintf('DmndNW%d_%d_%s',i,j,smark));
+            end
+        end
+
+        % Transfer Passengers constraint
+        for i = 1:nodes
+            for j = 1:nodes
+                C2 = zeros(1, nvars);       %Setting coefficient matrix with zeros
+                % w_ij <= dem_ij*hub!
+                % High Season
+                C2(varindex(i, j, 0, s)) = 1;  % w_ij
+                g = 1 - 1*((i == 1) || (j == 1));
+                cplex.addRows(0, C2, g*demnd(i,j,s),sprintf('IH_NW%d_%d_%s',i,j,smark));
+            end
+        end
+    end
+    
+    %   Run CPLEX
+    cplex.solve();
+    cplex.writeModel(['LPfiles\' model num2str(iter) '.lp']);
+    sol  = cplex.Solution.x;
+end
+
+% Check the final error
+if err >= 1e-4
+    fh0 = freqh;
+    fl0 = freql;
+    fh1 = round(sum(reshape(sol(varindex(1,1,1,1):varindex(nodes,nodes,nacft,1)),nodes,nodes,nacft),3));
+    fl1 = round(sum(reshape(sol(varindex(1,1,1,2):varindex(nodes,nodes,nacft,2)),nodes,nodes,nacft),3));
+    err = sqrt(sum(sum((fh1-fh0).^2 + (fl1-fl0).^2))/sum(sum(fh1.^2 + fl1.^2))); % Error in frequency
+    fprintf('Iteration %2d \t Time %5.2f s\t\t Error %4.2f %%\n',iter, toc, err*100);
+end
+%% Postprocess
+sol0  = cplex.Solution.x;
+tags = tags(1:nodes);
+% Small violation of integer constraints ~1e-9
+newl = sol0(1:nacft)'; % New leases
+canl = sol0(nacft+1 : 2*nacft)'; % Cancelled Leases
+AC   = acrft.num + newl - canl; % Aircraft number
+sol  = cell(2,1);
+% dpax = cell(2,1);
+% cpax = cell(2,1);
+% flts = cell(2,1);
+% cap  = cell(2,1);
+% fpax = cell(2,1);
+% tcost= cell(2,1);
+% trvnu= cell(2,1);
+% task = cell(2,1);
+
+for s = 1:2
+    sol{s}  = sol0(varindex(1,1,-1,s):varindex(nodes,nodes,nacft,s));
+    dpax{s} = round(reshape(sol{s}(1:nodes^2),nodes,nodes)); % Direct Passengers matrix
+    cpax{s} = round(reshape(sol{s}(1+nodes^2: 2*nodes^2),nodes,nodes));   % Connecting Passengers matrix
+    flts{s} = round(reshape(sol{s}(1+2*nodes^2: end),nodes,nodes,nacft)); % Flights matrix
+    
+    % Capacity matrix
+    cap{s}  = zeros(nodes);
+    for k = 1:nacft
+        cap{s} = cap{s} + round(acrft.sts(k) * flts{s}(:,:,k));
+    end
+    
+    % Passenger flows (connecting and direct)
+    fpax{s} = zeros(nodes);
+    for j = 1:nodes
+        for i = 1:nodes
+            fpax{s}(i,j) = dpax{s}(i,j);
+            if i == 1
+                fpax{s}(i,j) = fpax{s}(i,j) + sum(cpax{s}(:,j));
+            elseif j == 1
+                fpax{s}(i,j) = fpax{s}(i,j) + sum(cpax{s}(i,:));
+            end
+        end
+    end
+    
+    % Operative Results and KPIs
+    tcost{s} = sum(sum(sum(costm.*flts{s}))) + sum(AC.*acrft.cl)  + sum(newl*feenl) + sum(canl*feecl);;
+    trvnu{s} = sum(sum(rvnum.*(dpax{s}+cpax{s})));
+    task{s}  = sum(sum(cap{s}.*distm)); % Total ASK
+    trpk{s}  = sum(sum(fpax{s}.*distm));% Total RPK
+end
+
+fprintf('\n\nKPI:  \t    High S.  \t Low S.\n');
+fprintf('   ASK:  %10.0f\t %10.0f ASK/week\n', task{1}, task{2});
+fprintf('   RPK:  %10.0f\t %10.0f RPK/week\n', trpk{1}, task{2});
+fprintf('  CASK:      %5.4f\t     %5.4f €/ASK\n', tcost{1}/task{1}, tcost{2}/task{2});
+fprintf('  RASK:      %5.4f\t     %5.4f €/ASK\n', trvnu{1}/task{1}, trvnu{2}/task{2});
+fprintf(' Yield:      %5.4f\t     %5.4f €/RPK\n', trvnu{1}/trpk{1}, trvnu{2}/trpk{2});
+fprintf('  ANLF:       %4.2f\t      %4.2f %%\n', trpk{1}/task{1}*100,trpk{2}/task{2}*100);
+fprintf('  BELF:       %4.2f\t      %4.2f %%\n', (tcost{1}/task{1})/(trvnu{1}/trpk{1})*100,...
+    (tcost{2}/task{2})/(trvnu{2}/trpk{2})*100);
+
+fprintf('\n\nResults: \t\tHigh S.\t\t\tLow S.\n');
+fprintf('   Costs:    %10.2f     %10.2f €\n', tcost{1}, tcost{2});
+fprintf('   Yield:    %10.2f     %10.2f €\n', trvnu{1}, trvnu{2});
+fprintf(' Balance:    %10.2f     %10.2f €\n', trvnu{1} - tcost{1}, trvnu{2} - tcost{2});
+fprintf('\n\nNumber of aircraft: \tCurrent\tInitial\t NewLs\tCancel\n');
+
+namelist = {'Turboprop', 'Regional Jet','Single-Aisle Jet','Twin-Aisle Jet', 'Long Range Jet'};
+for k = 1:nacft
+    fprintf(' %s: \t\t%g\t\t%g\t\t%g\t\t%g\n',pad(namelist{k},20), AC(k), acrft.num(k), abs(newl(k)), abs(canl(k)));
+end
+
+for s= 1:2
+    fprintf('\n %s SEASON',('HIGH')*(s==1) + ' LOW'*(s==2));
+    for k = 1:nacft
+        fprintf('\n\n%s flights:\n',namelist{k});
+        ut  = 0;
+        ask = 0;
+        for i  = 1:nodes
+            for j = 1:nodes
+                if flts{s}(i,j,k) ~= 0
+                    %                 fprintf('%s to %s: %i flights\n',tags{i}, tags{j}, flts(i,j,k));
+                    ut = ut + flts{s}(i,j,k)*(distm(i,j)/acrft.vel(k) + ltotm(i,j,k));
+                    ask = ask + flts{s}(i,j,k)*distm(i,j)*acrft.sts(k);
+                end
+            end
+        end
+        fprintf('Total %s Utilisation:  %5.2f h\n',namelist{k},ut);
+        fprintf(' Unit %s Utilisation:  %5.2f h\n',namelist{k},ut/max([AC(k),1]));
+        fprintf('Total %s Productivity: %7.0f ASK/week\n',namelist{k},ask);
+        fprintf(' Unit %s Productivity: %7.0f ASK/week\n',namelist{k},ask/max([AC(k),1]));
+    end
+end
+%%
+% ---- Write matrices in Excel
+fprintf('Writing Data in Excel\n')
+for s= 1:2
+    xlswrite('input16_Ex3.xlsx',dpax{s},s+4,'B2:Y25');
+    xlswrite('input16_Ex3.xlsx',cpax{s},s+4,'B28:Y51');
+    xlswrite('input16_Ex3.xlsx',flts{s}(:,:,1),s+4,'B54:Y77');
+    xlswrite('input16_Ex3.xlsx',flts{s}(:,:,2),s+4,'B80:Y103');
+    xlswrite('input16_Ex3.xlsx',flts{s}(:,:,3),s+4,'B106:Y129');
+    xlswrite('input16_Ex3.xlsx',flts{s}(:,:,4),s+4,'B132:Y155');
+    xlswrite('input16_Ex3.xlsx',flts{s}(:,:,5),s+4,'B158:Y181');
+end
+fprintf('Data written\n')
+%%
+% ---- Plots
+if plots_on == 1
+    fprintf('Plotting maps...\n')
+    % Function to calculate the average symmetric matrix
+    avgsym = @(A) 0.5*(triu(A) + triu(A)') + 0.5*(tril(A) + tril(A)');
+    % Undirected Graphs
+    for s = 1:2
+        
+        Gdpax{s} = graph(avgsym(dpax{s}),tags);% Direct Passenger flows
+        Gcpax{s} = graph(avgsym(cpax{s}),tags);% Connecting Passenger flows
+        Gfpax{s} = graph(avgsym(fpax{s}),tags);% Direct Passenger flows
+        Gcap{s} = graph(avgsym(cap{s}),tags(1:nodes));% Capacity Passenger flows
+        for k = 1:nacft
+            Gfl{s,k} = graph(avgsym(flts{s}(:,:,k)),tags);% Prop flights
+        end
+    end
+    
+    maxval = max(max([fpax{1} fpax{2}])); % Max value to scale graph edges
+    lat = apdat.lat(1:nodes);
+    lon = apdat.lon(1:nodes);
+    ax = [-120 30 28 65]; % Axes - latitude and longitude
+    
+    % Direct, Connencting and total passenger flows - 3 subplots
+    % 1 plot
+    figure('units','normalized','outerposition',[0 0 0.7 0.8])
+    for s = 1:2
+        smark = sprintf('\n %s SEASON',('HIGH')*(s==1) + ' LOW'*(s==2));
+        subplot(2,1,s)
+        plot_graph_map({Gcpax{s},Gdpax{s}}, lat, lon, maxval, ax, {'b:','r'}) 
+        xlabel('lat (deg)'); ylabel('lon (deg)'); title(['Passenger Flows - ' smark]);
+        legend('Connecting','Direct','Location','NorthWest')
+    end
+    saveas(gca, 'Figures\passengers.eps','epsc');
+    
+    % Total Capacity Offered
+    figure('units','normalized','outerposition',[0 0 0.7 0.8])
+    for s = 1:2
+        smark = sprintf('\n %s SEASON',('HIGH')*(s==1) + ' LOW'*(s==2));
+        subplot(2,1,s)
+        maxval = max(max([cap{1} cap{2}])); % Max value to scale graph edges
+        plot_graph_map(Gcap{s}, lat, lon, maxval, ax, 'r')
+        xlabel('lat (deg)'); ylabel('lon (deg)'); title(['Capacity Offered - ' smark]);
+    end
+    saveas(gca, 'Figures\capacity.eps','epsc');
+    % Flights operated
+    % 1 plot only
+    figure('units','normalized','outerposition',[0 0 0.7 0.8])
+    maxval = max(max(max([flts{1} flts{2}])));
+    for s = 1:2
+        smark = sprintf('\n %s SEASON',('HIGH')*(s==1) + ' LOW'*(s==2));
+        subplot(2,1,s)
+        plot_graph_map({Gfl{s,:}}, lat, lon, maxval, ax, {'-','k','-','-','r'})
+        xlabel('lat (deg)'); ylabel('lon (deg)'); title(['Operated Flights - ' smark]);
+        legend('Turborop','Regional Jet','Single Aisle Jet','Twin Aisle Jet','Long Range Jet','Location','NorthWest')
+    end
+    saveas(gca, 'Figures\flights.eps','epsc')
+    
+    fprintf('Maps Done\n')
+end

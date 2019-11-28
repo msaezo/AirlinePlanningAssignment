@@ -1,0 +1,17 @@
+function plot_graph_map(G, lat, lon, maxval, ax, col)
+% Plots the network graph over a map
+% Plots european map first
+geoshow('landareas.shp', 'FaceColor', [0.8 1.0 0.8]);
+axis(ax);
+hold on
+if iscell(G)
+    for i=1:length(G)
+        LWidths = 1 + 9*G{i}.Edges.Weight/maxval;
+        plot(G{i}, col{i},'LineWidth',LWidths, 'XData',lon,'YData', lat)
+    end
+else
+    LWidths = 1 + 3*G.Edges.Weight/maxval;
+    plot(G, col,'LineWidth',LWidths, 'XData',lon,'YData', lat)
+end
+hold off
+end
