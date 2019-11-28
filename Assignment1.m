@@ -24,30 +24,6 @@ N = length(Airports); % Number of airports
 
 %% Pre-processing
 
-% Population --> Linear regression y=m*Year+n
-m_pop = zeros(1,N);
-n_pop = zeros(1,N);
-
-for i = 1:N
-    m_pop(i) = (pop_2017(i)-pop_2010(i))/(2017-2010);
-    n_pop(i) = pop_2017(i)-m_pop(i)*2017;
-end
-
-pop_2014 = m_pop*2014+n_pop;
-pop_2019 = m_pop*2019+n_pop;
-
-% Gross Domestic Product --> Linear regression y=m*Year+n
-m_GDP = zeros(1,N);
-n_GDP = zeros(1,N);
-
-for i = 1:N
-    m_GDP(i) = (GDP_2017(i)-GDP_2010(i))/(2017-2010);
-    n_GDP(i) = GDP_2017(i)-m_GDP(i)*2017;
-end
-
-GDP_2014 = m_GDP*2014+n_GDP;
-GDP_2019 = m_GDP*2019+n_GDP;
-
 % Distance
 RE = 6371; % Radius of the Earth [km]
 Distance = zeros(N);
@@ -61,7 +37,6 @@ for i = 1:N
     end
 end
 
-% Ordinary Least Squares
 logDemand_2014 = log(Demand_2014);
 logpop_2014 = log(pop_2014);
 logGDP_2014 = log(GDP_2014);
