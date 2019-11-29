@@ -119,6 +119,10 @@ end
 % rounding it: ceil, fix, floor, round
 Demand_2019 = round(Demand_2019);
 
+% Vector g
+g = ones(1,N);
+g(pos_hub) = 0;
+
 %% Initialize model
 
 model = 'Assignment1_group31'; % Name of the model
@@ -150,12 +154,16 @@ for i = 1:N
             Yield = 5.9*Distance(i,j)^(-0.76)+0.43;
         end
         
-        obj(1,varindex_3(1,i,j,k,N,AC_number)) = Yield*Distance(i,j);
-        obj(1,varindex_3(2,i,j,k,N,AC_number)) = Yield*Distance(i,j);
+        obj(varindex_3(1,i,j,k,N,AC_number)) = Yield*Distance(i,j);
+        obj(varindex_3(2,i,j,k,N,AC_number)) = Yield*Distance(i,j);
         
         for k = 1:AC_number
         % Costs
-            Fixed_costs = CX(k);
+            if i == j
+                Fixed_costs = 0;
+            else
+                Fixed_costs = CX(k);
+            end
             Time_costs = CT(k)*Distance(i,j)/Speed(k);
             Fuel_costs = CF(k)*f/1.5*Distance(i,j);
             Operating_cost = Fixed_costs+Time_costs+Fuel_costs;
@@ -164,17 +172,14 @@ for i = 1:N
                 Operating_cost = 0.7*Operating_cost;
             end
             
-            obj(1,varindex_3(3,i,j,k,N,AC_number)) = -Operating_cost;
-            obj(1,varindex_3(4,i,j,k,N,AC_number)) = -Lease_cost(k);
+            obj(varindex_3(3,i,j,k,N,AC_number)) = -Operating_cost;
+            obj(varindex_3(4,i,j,k,N,AC_number)) = -Lease_cost(k);
         end
     end
 end
 % NaNvector = find(isnan(obj))--> Used to check if there were any cell with
 % NaN value. Found when 0^(-0.76) when computing the Yield. I think that
 % that problem is solved.
-
-% I think we do not need to put obj(1,...) since it is already a vector not
-% a matrix but it doesn't matter
 
 lb = zeros(DV,1);
 ub = inf(DV,1);
@@ -183,6 +188,20 @@ ctype1 = char(ones(1, (DV)) * ('I'));  %I=integer. Other options, C=continous, B
 ctype = strcat(ctype1);
 
 cplex.addCols(obj, [], lb, ub, ctype,NameDV); %This can also be done without NameDV
+
+%% Constraint 1: Demand verification
+
+
+for i=1:N
+    for j=1:N
+        C1 = zeros(1,DV);
+        C1(varindex_3(1,i,j,k,N,AC_number)) = 1;
+        C1(varindex_3(2,i,j,k,N,AC_number)) = 1;
+        RHS = Demand(i,j);
+        cplex.addRows(-inf, C1, Demand(i,j),sprintf('Constraint1%d_%d',i,j));
+    end
+end
+
 
 %% Solve the model
 
