@@ -197,7 +197,7 @@ for i = 1:N
         if i == j 
             Yield = 0;
         else
-            Yield = 5.9*Distance(i,j)^(-0.76)+0.43;
+            Yield = 5.9*Distance(i,j)^(-0.76)+0.043;
         end
         
         obj(varindex_3(1,i,j,k,N,AC_number)) = Yield*Distance(i,j);
