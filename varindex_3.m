@@ -1,4 +1,5 @@
 function out = varindex_3(var, i, j, k, Nodes,Ktotal)
+
 %--------------------------------------------------------------------------
 % This function is used to locate the coefficients that multiply each of
 % the different decision variables in the objective function or in the
@@ -19,6 +20,7 @@ function out = varindex_3(var, i, j, k, Nodes,Ktotal)
 %      - out: This variable gives the position of the Decision Variable. 
 % 
 %--------------------------------------------------------------------------
+
     if var == 1
         out = (i-1)*Nodes + j; 
     elseif var == 2

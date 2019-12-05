@@ -1,7 +1,9 @@
 %% Assignment 1 - (AE4423-19 Airline Planning and Optimization)
 clc, clear all, close all
 % addpath('C:\Program Files\IBM\ILOG\CPLEX_Studio_Community129\cplex\matlab\x64_win64')
-addpath('C:\Program Files\IBM\ILOG\CPLEX_Studio129\cplex\matlab\x64_win64')
+%addpath('C:\Program
+%Files\IBM\ILOG\CPLEX_Studio129\cplex\matlab\x64_win64') Guille
+addpath('C:\Program Files\IBM\ILOG\CPLEX_Studio_Community129\cplex\matlab\x64_win64')
 
 %% Data
 
@@ -251,7 +253,7 @@ for i = 1:N
         
         for m = 1:N
             C3(varindex_3(1,i,m,k,N,AC_number)) = C3(varindex_3(1,i,m,k,N,AC_number))+(1-g(j));
-            C3(varindex_3(1,m,j,k,N,AC_number)) = C3(varindex_3(1,i,m,k,N,AC_number))+(1-g(i));
+            C3(varindex_3(1,m,j,k,N,AC_number)) = C3(varindex_3(1,m,j,k,N,AC_number))+(1-g(i));
         end
         
         
