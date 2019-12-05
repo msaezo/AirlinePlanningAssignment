@@ -1,9 +1,7 @@
 %% Assignment 1 - (AE4423-19 Airline Planning and Optimization)
 clc, clear all, close all
 % addpath('C:\Program Files\IBM\ILOG\CPLEX_Studio_Community129\cplex\matlab\x64_win64')
-%addpath('C:\Program
-%Files\IBM\ILOG\CPLEX_Studio129\cplex\matlab\x64_win64') Guille
-addpath('C:\Program Files\IBM\ILOG\CPLEX_Studio_Community129\cplex\matlab\x64_win64')
+addpath('C:\Program Files\IBM\ILOG\CPLEX_Studio129\cplex\matlab\x64_win64')
 
 %% Data
 
@@ -144,34 +142,19 @@ end
 % rounding it: ceil, fix, floor, round
 Demand_2019 = round(Demand_2019);
 
-
-
-Demand_2014_trial = zeros(N); % Demand 2014 matrix definition
-% Demand_2014_trial_2 = zeros(N); % Demand 2014 matrix definition
-for i = 1:N
-    for j = 1:N
-        if i ~= j
-%             Demand_2019(i,j) = 0; % We do not need to put this because it is already zero
-%         else
-            logDemand_2014_trial = B(1)+B(2)*log(pop_2014(i)*pop_2014(j))+...
-                B(3)*log(GDP_2014(i)*GDP_2014(j))-B(4)*log(f*Distance(i,j));
-            Demand_2014_trial(i,j) = exp(logDemand_2014_trial);
-            
-%             Demand_2014_trial_2(i,j) = exp(B(1))*(((pop_2014(i)*pop_2014(j))^B(2)*(GDP_2014(i)*GDP_2014(j))^B(3))/((f*Distance(i,j))^B(4)));
-        end
-    end
-end
-
-Demand_2014_trial = round(Demand_2014_trial);
-% Demand_2014_trial_2 = round(Demand_2014_trial_2);
 % Vector g
 g = ones(1,N);
 g(pos_hub) = 0;
+%% Ajuste de variables para solo 4 aeropuertos
+N=4;
+Demand_2019=Demand_2019(1:N,1:N);
+pop_2019=pop_2019(1:N);
+GDP_2019=GDP_2019(1:N);
+Distance = Distance(1:N,1:N);
+g = ones(1,N);
+g(pos_hub) = 0;
 
-
-% Demand_2019=Demand_2014;
 %% Initialize model
-
 
 model = 'Assignment1_group31'; % Name of the model
 cplex = Cplex(model); % Initialize Cplex
@@ -199,7 +182,7 @@ for i = 1:N
         if i == j 
             Yield = 0;
         else
-            Yield = 5.9*Distance(i,j)^(-0.76)+0.043;
+            Yield = 5.9*Distance(i,j)^(-0.76)+0.43;
         end
         
         obj(varindex_3(1,i,j,k,N,AC_number)) = Yield*Distance(i,j);
@@ -316,10 +299,11 @@ for k = 1:AC_number
     C5 = zeros(1,DV);
     for i = 1:N
         for j = 1:N % if i=j the distance is 0 so the first variable should be zero? 
-            if i ~= j
+            if i~=j
             C5(varindex_3(3,i,j,k,N,AC_number)) = Distance(i,j)/Speed(k) + TAT(k)*(1+(1-g(j)));
             end
             C5(varindex_3(4,i,j,k,N,AC_number)) = -BT;
+            
         end
     end
     C5_matrix(row_c5,:) = C5;
@@ -365,29 +349,12 @@ for k = 1:AC_number
     end
 end
 
-% %% Constraint 8
-% C8_matrix = zeros(1,DV);
-% row_c8 = 1;
-% C8 = zeros(1,DV);
-% for k = 1:AC_number 
-%     C8(varindex_3(4,i,j,k,N,AC_number)) = 1;
-% end
-% cplex.addRows(-inf, C8, inf,sprintf('Constraint8'));
-
 %% Solve the model
 
 cplex.writeModel([model '.lp']) %Store the model to an .lp file for debugging
 cplex.Param.timelimit.Cur = 300; %Timelimit of the solver in seconds, more useful for larger models
 cplex.solve();
 
-% for i=1:Nodes
-%     for j=1:Nodes
-%         flow_this_leg = cplex.Solution.x(varindex_3(1,i,j));
-%         if flow_this_leg>0
-%             sprintf('%d passengers from %d to %d', flow_this_leg, i, j)
-%         end
-%     end
-% end
 obj_matrix=cplex.Model.obj;
 A_total=cplex.Model.A;
 RHS_total=cplex.Model.rhs;
