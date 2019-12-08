@@ -359,6 +359,8 @@ end
 
 cplex.writeModel([model '.lp']) %Store the model to an .lp file for debugging
 cplex.Param.timelimit.Cur = 20; %Timelimit of the solver in seconds, more useful for larger models
+cplex.Solution.dual
+
 cplex.solve();
 
 obj_matrix=cplex.Model.obj;

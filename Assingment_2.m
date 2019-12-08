@@ -81,7 +81,7 @@ for j=1:P
 end
 
 
-getsocpconstrmultipliers(cplex)
+%getsocpconstrmultipliers(cplex)
 %%
 % cplex.Param.preprocessing.relax=1
 % cplex.Param.simplex.limits.iterations= 'dual' 
