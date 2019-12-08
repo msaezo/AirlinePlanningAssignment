@@ -99,6 +99,8 @@ end
 for k = 1:AC_number 
     for i = 1:N
         for j = 1:N
+            
+            if i ~=j
             C6 = zeros(1,DV);
             C6(varindex_3(3,i,j,k,N,AC_number)) = 1;
             RHS = 0;
@@ -108,6 +110,7 @@ for k = 1:AC_number
             cplex.addRows(-inf, C6, RHS,sprintf('Constraint6%d_%d_%d',k,i,j));
             %C6_matrix(row_c6,:) = C6;
             %row_c6 = row_c6 + 1;
+            end
         end
     end
 end
@@ -118,6 +121,8 @@ end
 for k = 1:AC_number 
     for i = 1:N
         for j = 1:N
+            
+            if i ~=j
             C7 = zeros(1,DV);
             C7(varindex_3(3,i,j,k,N,AC_number)) = 1;
             RHS = 0;
@@ -127,6 +132,7 @@ for k = 1:AC_number
             cplex.addRows(-inf, C7, RHS,sprintf('Constraint7%d_%d_%d',k,i,j));
             %C7_matrix(row_c7,:) = C7;
             %row_c7 = row_c7 + 1;
+            end
         end
     end
 end

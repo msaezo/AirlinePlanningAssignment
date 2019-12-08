@@ -1,9 +1,8 @@
 %% Assignment 1 - (AE4423-19 Airline Planning and Optimization)
 clc, clear all, close all
 % addpath('C:\Program Files\IBM\ILOG\CPLEX_Studio_Community129\cplex\matlab\x64_win64')
-%addpath('C:\Program
-%Files\IBM\ILOG\CPLEX_Studio129\cplex\matlab\x64_win64') Guille
-addpath('C:\Program Files\IBM\ILOG\CPLEX_Studio_Community129\cplex\matlab\x64_win64')
+addpath('C:\Program Files\IBM\ILOG\CPLEX_Studio129\cplex\matlab\x64_win64') % Guille
+% addpath('C:\Program Files\IBM\ILOG\CPLEX_Studio_Community129\cplex\matlab\x64_win64')
 
 %% Data
 
@@ -157,22 +156,17 @@ for i = 1:N
             logDemand_2014_trial = B(1)+B(2)*log(pop_2014(i)*pop_2014(j))+...
                 B(3)*log(GDP_2014(i)*GDP_2014(j))-B(4)*log(f*Distance(i,j));
             Demand_2014_trial(i,j) = exp(logDemand_2014_trial);
-            
-%             Demand_2014_trial_2(i,j) = exp(B(1))*(((pop_2014(i)*pop_2014(j))^B(2)*(GDP_2014(i)*GDP_2014(j))^B(3))/((f*Distance(i,j))^B(4)));
         end
     end
 end
 
 Demand_2014_trial = round(Demand_2014_trial);
-% Demand_2014_trial_2 = round(Demand_2014_trial_2);
+
 % Vector g
 g = ones(1,N);
 g(pos_hub) = 0;
 
-
-% Demand_2019=Demand_2014;
 %% Initialize model
-
 
 model = 'Assignment1_group31'; % Name of the model
 cplex = Cplex(model); % Initialize Cplex
@@ -252,17 +246,16 @@ cplex.solve();
 %         end
 %     end
 % end
+
 obj_matrix=cplex.Model.obj;
 A_total=cplex.Model.A;
 RHS_total=cplex.Model.rhs;
-
+solution=cplex.Solution.x;
 %% Post-Processing
 %In this section the KPI performance parameters will be calculated. 
-
 ASK = 0;
 
 Operating_cost_total = 0;
-RPK = 0;
 Revenue_tot = 0;
 for i = 1:N
     for j = 1:N
@@ -319,25 +312,143 @@ LoadFactor = RPK/ASK;
 Yield_tot = (Revenue_tot/RPK);
 BELF = CASK/Yield_tot;
 
-%% MAP
+%% Graphics
 
-worldmap([41 47], [-89 -84]); 
-lakes=shaperead('worldlakes','UseGeoCoords',true); 
-X_47=(41.709091:0.5:43.127372);
-Y_47=(-87.476139:0.5:-86.340273); 
-griddata(42.419908, -86.91495,1); 
-load coastlines plotm(coastlat,coastlon); 
-plotm(coastlat,coastlon);
-hold on; plot(X_47,Y_47,'r');
+% https://in.mathworks.com/videos/plot-geographic-data-on-a-map-in-matlab-1545831202291.html
+% plot(lot, lat,'r', 'LineWidth',2)
 
-worldmap([41 47], [-89 -84]) 
-lakes=shaperead('worldlakes','UseGeoCoords',true); 
-X_47=(41.709091:0.5:43.127372);
-Y_47=(-87.476139:0.5:-86.340273); 
-% griddata(42.419908, -86.91495,1); 
-load coastlines 
-geoshow(coastlat,coastlon); 
-hold on; 
-h = geoshow(X_47',Y_47');
-h.Marker = 'o'; h.Color = 'r';
+% geoplot(Lat,Lon,'.','MarkerSize',20)
+Pax = zeros(N);
+Direct_pax = zeros(N);
+Nodirect_pax = zeros(N);
+Tot_ndp = 0;
+Tot_dp = 0;
+flighs_ac1 = zeros(N);
+flighs_ac2 = zeros(N);
+flighs_ac3 = zeros(N);
+flighs_ac4 = zeros(N);
+
+for i = 1:N
+    for j = 1:N
+        Pax(i,j) = Pax(i,j)+solution(varindex_3(2,i,j,k,N,AC_number));
+        Direct_pax(i,j) = solution(varindex_3(2,i,j,k,N,AC_number));
+        Tot_dp = Tot_dp + Direct_pax(i,j);
+        
+        Pax_through_hub = solution(varindex_3(1,i,j,k,N,AC_number));
+        Tot_ndp = Tot_ndp + Pax_through_hub;
+        
+        Pax(i,pos_hub) = Pax(i,pos_hub)+Pax_through_hub;
+        Pax(pos_hub,j) = Pax(pos_hub,j)+Pax_through_hub;
+        
+        Nodirect_pax(i,pos_hub) = Nodirect_pax(i,pos_hub)+Pax_through_hub;
+        Nodirect_pax(pos_hub,j) = Nodirect_pax(pos_hub,j)+Pax_through_hub;
+        
+        flighs_ac1(i,j) = flighs_ac1(i,j)+solution(varindex_3(3,i,j,1,N,AC_number));
+        flighs_ac2(i,j) = flighs_ac2(i,j)+solution(varindex_3(3,i,j,2,N,AC_number));
+        flighs_ac3(i,j) = flighs_ac3(i,j)+solution(varindex_3(3,i,j,3,N,AC_number));
+        flighs_ac4(i,j) = flighs_ac4(i,j)+solution(varindex_3(3,i,j,4,N,AC_number));
+        
+    end
+end
+
+Pax_norm = Pax/max(max(Pax));
+Nodirect_pax_norm = Nodirect_pax/max(max(Pax));
+Direct_pax_norm = Direct_pax/max(max(Pax));
+Tot_fac1 = sum(sum(flighs_ac1));
+Tot_fac2 = sum(sum(flighs_ac2));
+Tot_fac3 = sum(sum(flighs_ac3));
+Tot_fac4 = sum(sum(flighs_ac4));
+Tot_f = Tot_fac1 + Tot_fac2 + Tot_fac3 + Tot_fac4;
+
+figure()
+pie([Tot_fac1/Tot_f Tot_fac2/Tot_f Tot_fac3/Tot_f Tot_fac4/Tot_f]);
+legend('Regional turboprop','Regional jet','Single aisle twin engine jet',...
+'Twin aisle, twin engine jet','Location','northeastoutside','Orientation',...
+'vertical')
+title('% flights flown by each type of AC')
+
+figure()
+% geoplot([Lat(1) Lat(2)],[Lon(1) Lon(2)],'Linewidth',2)
+geoplot(Lat,Lon,'.','MarkerSize',20)
+hold on
+for i = 1:N
+    for j = 1:N
+        if Pax_norm(i,j) ~= 0
+            geoplot([Lat(i) Lat(j)],[Lon(i) Lon(j)],'k','Linewidth',5*Pax_norm(i,j))
+            
+        end
+    end
+%     text(Lat(i),Lon(i),Airports(i))
+end
+geobasemap('bluegreen')
+% geobasemap('usgsimageryonly')
+% geobasemap('landcover')
+% geobasemap('darkwater')
+% geobasemap('grayland')
+% geobasemap('grayterrain')
+% geobasemap('colorterrain')
+% geobasemap('none')
+title('Flow of passengers')
+
+
+figure()
+geoplot(Lat,Lon,'.','MarkerSize',20)
+hold on
+geoplot([Lat(1) Lat(2)],[Lon(1) Lon(2)],'r','Linewidth',15*flighs_ac1(1,2)/Tot_f)            
+geoplot([Lat(1) Lat(2)],[Lon(1) Lon(2)],'b--','Linewidth',15*flighs_ac1(1,2)/Tot_f)
+geoplot([Lat(1) Lat(2)],[Lon(1) Lon(2)],'g:','Linewidth',15*flighs_ac1(1,2)/Tot_f)
+geoplot([Lat(1) Lat(2)],[Lon(1) Lon(2)],'y.','Linewidth',15*flighs_ac1(1,2)/Tot_f)
+
+for i = 1:N
+    for j = 1:N
+        if flighs_ac1(i,j) > 0
+            geoplot([Lat(i) Lat(j)],[Lon(i) Lon(j)],'r','Linewidth',50*flighs_ac1(i,j)/Tot_f)            
+        end
+        if flighs_ac2(i,j) > 0
+            geoplot([Lat(i) Lat(j)],[Lon(i) Lon(j)],'b--','Linewidth',50*flighs_ac2(i,j)/Tot_f)
+        end
+        if flighs_ac3(i,j) > 0
+            geoplot([Lat(i) Lat(j)],[Lon(i) Lon(j)],'g:','Linewidth',50*flighs_ac3(i,j)/Tot_f)            
+        end
+        if flighs_ac4(i,j) > 0
+            geoplot([Lat(i) Lat(j)],[Lon(i) Lon(j)],'y.','Linewidth',50*flighs_ac4(i,j)/Tot_f)
+        end
+        
+    end
+%     text(Lat(i),Lon(i),Airports(i))
+end
+geobasemap('bluegreen')
+title('Aircraft Routes')
+legend('Airports','Regional turboprop','Regional jet','Single aisle twin engine jet',...
+'Twin aisle, twin engine jet')
+
+
+
+figure()
+% geoplot([Lat(1) Lat(2)],[Lon(1) Lon(2)],'Linewidth',2)
+geoplot(Lat,Lon,'.','MarkerSize',20)
+hold on
+for i = 1:N
+    for j = 1:N
+        if Direct_pax_norm(i,j) > 0
+            geoplot([Lat(i) Lat(j)],[Lon(i) Lon(j)],'r','Linewidth',5*Direct_pax_norm(i,j))            
+        end
+        if Nodirect_pax_norm(i,j) > 0
+            geoplot([Lat(i) Lat(j)],[Lon(i) Lon(j)],'b--','Linewidth',5*Nodirect_pax_norm(i,j))
+        end
+    end
+%     text(Lat(i),Lon(i),Airports(i))
+end
+geobasemap('bluegreen')
+% geobasemap('usgsimageryonly')
+% geobasemap('landcover')
+% geobasemap('darkwater')
+% geobasemap('grayland')
+% geobasemap('grayterrain')
+% geobasemap('colorterrain')
+% geobasemap('none')
+title('Flow of passengers')
+legend('Airports','Direct pax','No direct pax')
+%% Results representation
+
 

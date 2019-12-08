@@ -156,7 +156,7 @@ g(pos_hub) = 0;
 
 %% Initialize model
 
-model = 'Assignment1_group31'; % Name of the model
+model = 'Assignment1_group31_4aeropuertos'; % Name of the model
 cplex = Cplex(model); % Initialize Cplex
 cplex.Model.sense = 'maximize'; % Maximize profit
 
@@ -182,7 +182,7 @@ for i = 1:N
         if i == j 
             Yield = 0;
         else
-            Yield = 5.9*Distance(i,j)^(-0.76)+0.43;
+            Yield = 5.9*Distance(i,j)^(-0.76)+0.043;
         end
         
         obj(varindex_3(1,i,j,k,N,AC_number)) = Yield*Distance(i,j);
@@ -317,6 +317,7 @@ row_c6 = 1;
 for k = 1:AC_number 
     for i = 1:N
         for j = 1:N
+            if i ~=j
             C6 = zeros(1,DV);
             C6(varindex_3(3,i,j,k,N,AC_number)) = 1;
             RHS = 0;
@@ -326,6 +327,7 @@ for k = 1:AC_number
             cplex.addRows(-inf, C6, RHS,sprintf('Constraint6%d_%d_%d',k,i,j));
             C6_matrix(row_c6,:) = C6;
             row_c6 = row_c6 + 1;
+            end
         end
     end
 end
@@ -336,6 +338,8 @@ row_c7 = 1;
 for k = 1:AC_number 
     for i = 1:N
         for j = 1:N
+            
+            if i ~=j
             C7 = zeros(1,DV);
             C7(varindex_3(3,i,j,k,N,AC_number)) = 1;
             RHS = 0;
@@ -345,6 +349,8 @@ for k = 1:AC_number
             cplex.addRows(-inf, C7, RHS,sprintf('Constraint7%d_%d_%d',k,i,j));
             C7_matrix(row_c7,:) = C7;
             row_c7 = row_c7 + 1;
+            end
+            
         end
     end
 end
@@ -352,7 +358,7 @@ end
 %% Solve the model
 
 cplex.writeModel([model '.lp']) %Store the model to an .lp file for debugging
-cplex.Param.timelimit.Cur = 300; %Timelimit of the solver in seconds, more useful for larger models
+cplex.Param.timelimit.Cur = 20; %Timelimit of the solver in seconds, more useful for larger models
 cplex.solve();
 
 obj_matrix=cplex.Model.obj;
