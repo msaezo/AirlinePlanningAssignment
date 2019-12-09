@@ -4,19 +4,47 @@ clc, clear all, close all
 %addpath('C:\Program
 %Files\IBM\ILOG\CPLEX_Studio129\cplex\matlab\x64_win64') Guille
 addpath('C:\Program Files\IBM\ILOG\CPLEX_Studio_Community129\cplex\matlab\x64_win64')
+Cap = xlsread('Group_31.xlsx','Flights','F2:F133');%Capacity of each Flight
+[~,Flight,~]  = xlsread('Group_31.xlsx','Flights','A2:A133');
+Demand = xlsread('Group_31.xlsx','Itineraries','G2:G461'); %Demand of each itinerary
+Fare = xlsread('Group_31.xlsx','Itineraries','F2:F461'); %Fare of each itinerary
+[~,Itin_f1,~] = xlsread('Group_31.xlsx','Itineraries','D2:D461');
+[~,Itin_f2,~] = xlsread('Group_31.xlsx','Itineraries','E1:E461');
 
-Cap = [108 144 144 108 108 108];%Capacity of each Flight
-Demand = [0 90 40 90 50 100 80 120 100]; %Demand of each itinerary
-Fare = [0 150 130 150 130 150 150 100 100]; %Fare of each itinerary
-Flight  = [301 102 101 302 201 202];
-Itin = [0 0; 301 0; 301 101; 102 0; 102 302; 101 0; 302 0; 201 0; 202 0];
+%addzeros = length(Itin_f1) - length(Itin_f2);
+%Itin_f2 = [zeros(addzeros,1) ; Itin_f2];
+Itin = [Itin_f1 Itin_f2(2:end)];
+
+%Considering the ficticious itinerary
+
+%%
+%Cap = [0;Cap];
+%Flight = ['CC0000';Flight];
+Demand = [0;Demand];
+Fare = [0;Fare];
+Itin = ['0' '0' ; Itin];
+
+
 
 P = length(Fare); %Number of itineraries 9 = 8 + 1
 L = length(Flight); %Number of flights 6
+
+Itin_b_f1 = xlsread('Group_31.xlsx','Recapture','A2:A441');
+Itin_b_f2 = xlsread('Group_31.xlsx','Recapture','B2:B441');
+Recap = xlsread('Group_31.xlsx','Recapture','C2:C441');
+Itin_b_f1 = Itin_b_f1 + 2; %2 because we need +1 for the fictitious and +1 for the starting itin = 0
+Itin_b_f2 = Itin_b_f2 + 2;
+
 b = zeros(P); %Recapture ratio
-b(3,9) = 0.2; % b_2^8 = b_p^r p=quiero q=voy
+
+for i = 1:length(Itin_b_f1)
+        Itin_b_f1_i = Itin_b_f1(i);
+        Itin_b_f1_j = Itin_b_f2(i);
+        b(Itin_b_f1_i,Itin_b_f1_j) = Recap(i);
+end
+
 b(:,1) = 1;
-b(1,:) = 0; % Lo mismo las dimensiones de esta matriz cambian
+b(1,:) = 0; 
 
 delta = zeros(L,P);
 for i=1:L
@@ -125,7 +153,7 @@ cplex.Model.sense = 'minimize'; % Minimize spillage
     
     if any(any(tnew<0))  
         Position = find(tnew==min(tnew(tnew<0)));
-        columns = [columns Position'];
+        columns = [columns Position(1)];
         
     else
         Red_flag = "True";
