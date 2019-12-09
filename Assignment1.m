@@ -1,8 +1,10 @@
+
 %% Assignment 1 - (AE4423-19 Airline Planning and Optimization)
 clc, clear all, close all
 % addpath('C:\Program Files\IBM\ILOG\CPLEX_Studio_Community129\cplex\matlab\x64_win64')
 addpath('C:\Program Files\IBM\ILOG\CPLEX_Studio129\cplex\matlab\x64_win64') % Guille
 % addpath('C:\Program Files\IBM\ILOG\CPLEX_Studio_Community129\cplex\matlab\x64_win64')
+set(0,'defaulttextinterpreter','latex')
 
 %% Data
 
@@ -312,12 +314,19 @@ LoadFactor = RPK/ASK;
 Yield_tot = (Revenue_tot/RPK);
 BELF = CASK/Yield_tot;
 
-%% Graphics
+%% Graphs
 
 % https://in.mathworks.com/videos/plot-geographic-data-on-a-map-in-matlab-1545831202291.html
-% plot(lot, lat,'r', 'LineWidth',2)
+% COLOUR SPECIFICATION
 
-% geoplot(Lat,Lon,'.','MarkerSize',20)
+blue = [0, 0.4470, 0.7410];
+orange = [0.8500, 0.3250, 0.0980];
+yellow = [0.9290, 0.6940, 0.1250];
+purple = [0.4940, 0.1840, 0.5560];
+green = [0.4660, 0.6740, 0.1880];
+cyan = [0.3010, 0.7450, 0.9330];
+red = [0.6350, 0.0780, 0.1840];
+
 Pax = zeros(N);
 Direct_pax = zeros(N);
 Nodirect_pax = zeros(N);
@@ -354,18 +363,31 @@ end
 Pax_norm = Pax/max(max(Pax));
 Nodirect_pax_norm = Nodirect_pax/max(max(Pax));
 Direct_pax_norm = Direct_pax/max(max(Pax));
+
+Tot_dp = sum(sum(Direct_pax));
+Tot_ndp = sum(sum(Nodirect_pax));
+Tot_pax = sum(sum(Pax));
+
 Tot_fac1 = sum(sum(flighs_ac1));
 Tot_fac2 = sum(sum(flighs_ac2));
 Tot_fac3 = sum(sum(flighs_ac3));
 Tot_fac4 = sum(sum(flighs_ac4));
 Tot_f = Tot_fac1 + Tot_fac2 + Tot_fac3 + Tot_fac4;
 
+% PAX = [Direct_pax ]
+
 figure()
 pie([Tot_fac1/Tot_f Tot_fac2/Tot_f Tot_fac3/Tot_f Tot_fac4/Tot_f]);
 legend('Regional turboprop','Regional jet','Single aisle twin engine jet',...
-'Twin aisle, twin engine jet','Location','northeastoutside','Orientation',...
+'Twin aisle, twin engine jet','Location','bestoutside','Orientation',...
 'vertical')
-title('% flights flown by each type of AC')
+title('Flights flown by each type of AC')
+
+figure()
+pie([Tot_dp/Tot_pax Tot_ndp/Tot_pax]);
+legend('Direct','No direct','Location','bestoutside','Orientation',...
+'horizontal')
+title('Type of passengers')
 
 figure()
 % geoplot([Lat(1) Lat(2)],[Lon(1) Lon(2)],'Linewidth',2)
@@ -373,7 +395,7 @@ geoplot(Lat,Lon,'.','MarkerSize',20)
 hold on
 for i = 1:N
     for j = 1:N
-        if Pax_norm(i,j) ~= 0
+        if Pax_norm(i,j) > 0
             geoplot([Lat(i) Lat(j)],[Lon(i) Lon(j)],'k','Linewidth',5*Pax_norm(i,j))
             
         end
@@ -392,26 +414,25 @@ title('Flow of passengers')
 
 
 figure()
-geoplot(Lat,Lon,'.','MarkerSize',20)
+geoplot([Lat(1) Lat(2)],[Lon(1) Lon(2)],'color',red,'Linewidth',15*flighs_ac1(1,2)/Tot_f)            
 hold on
-geoplot([Lat(1) Lat(2)],[Lon(1) Lon(2)],'r','Linewidth',15*flighs_ac1(1,2)/Tot_f)            
-geoplot([Lat(1) Lat(2)],[Lon(1) Lon(2)],'b--','Linewidth',15*flighs_ac1(1,2)/Tot_f)
-geoplot([Lat(1) Lat(2)],[Lon(1) Lon(2)],'g:','Linewidth',15*flighs_ac1(1,2)/Tot_f)
-geoplot([Lat(1) Lat(2)],[Lon(1) Lon(2)],'y.','Linewidth',15*flighs_ac1(1,2)/Tot_f)
-
+geoplot([Lat(1) Lat(2)],[Lon(1) Lon(2)],'--','color',blue,'Linewidth',15*flighs_ac1(1,2)/Tot_f)
+geoplot([Lat(1) Lat(2)],[Lon(1) Lon(2)],':','color',green,'Linewidth',15*flighs_ac1(1,2)/Tot_f)
+geoplot([Lat(1) Lat(2)],[Lon(1) Lon(2)],'-.','color',yellow,'Linewidth',15*flighs_ac1(1,2)/Tot_f)
+geoplot(Lat,Lon,'b.','MarkerSize',20)
 for i = 1:N
     for j = 1:N
         if flighs_ac1(i,j) > 0
-            geoplot([Lat(i) Lat(j)],[Lon(i) Lon(j)],'r','Linewidth',50*flighs_ac1(i,j)/Tot_f)            
+            geoplot([Lat(i) Lat(j)],[Lon(i) Lon(j)],'color',red,'Linewidth',4)            
         end
         if flighs_ac2(i,j) > 0
-            geoplot([Lat(i) Lat(j)],[Lon(i) Lon(j)],'b--','Linewidth',50*flighs_ac2(i,j)/Tot_f)
+            geoplot([Lat(i) Lat(j)],[Lon(i) Lon(j)],'--','color',blue,'Linewidth',3)
         end
         if flighs_ac3(i,j) > 0
-            geoplot([Lat(i) Lat(j)],[Lon(i) Lon(j)],'g:','Linewidth',50*flighs_ac3(i,j)/Tot_f)            
+            geoplot([Lat(i) Lat(j)],[Lon(i) Lon(j)],':','color',green,'Linewidth',2)            
         end
         if flighs_ac4(i,j) > 0
-            geoplot([Lat(i) Lat(j)],[Lon(i) Lon(j)],'y.','Linewidth',50*flighs_ac4(i,j)/Tot_f)
+            geoplot([Lat(i) Lat(j)],[Lon(i) Lon(j)],'-.','color',yellow,'Linewidth',2)
         end
         
     end
@@ -419,8 +440,8 @@ for i = 1:N
 end
 geobasemap('bluegreen')
 title('Aircraft Routes')
-legend('Airports','Regional turboprop','Regional jet','Single aisle twin engine jet',...
-'Twin aisle, twin engine jet')
+legend('Regional turboprop','Regional jet','Single aisle twin engine jet',...
+'Twin aisle, twin engine jet','Location','northeast','NumColumns',2)
 
 
 
@@ -449,6 +470,3 @@ geobasemap('bluegreen')
 % geobasemap('none')
 title('Flow of passengers')
 legend('Airports','Direct pax','No direct pax')
-%% Results representation
-
-
