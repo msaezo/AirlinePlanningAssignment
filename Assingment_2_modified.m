@@ -76,12 +76,14 @@ columns = [1:P]; % This vector indicates which columns are considered.
 % fictitious itinerary.
 
 Red_flag = "False";
+tic;
+N = 0;
 while Red_flag == "False"
 %% Initialize model
 
-model = 'Assignment1_p2'; % Name of the model
-cplex = Cplex(model); % Initialize Cplex
-cplex.Model.sense = 'minimize'; % Minimize spillage
+    model = 'Assignment1_p2'; % Name of the model
+    cplex = Cplex(model); % Initialize Cplex
+    cplex.Model.sense = 'minimize'; % Minimize spillage
 
 
 
@@ -157,13 +159,27 @@ cplex.Model.sense = 'minimize'; % Minimize spillage
             tnew(j,k) = Fare(j)-b(j,k)*Fare(k)+piprice(j,k)-sigmas(j);
         end
     end
+    Position_check = find(tnew==min(tnew(tnew<0)));
+    
+    if N >= 1
+        if Position_check == Position
+            Red_flag = "True";
+        end
+    end
     
     if any(any(tnew<0))  
         Position = find(tnew==min(tnew(tnew<0)));
-        columns = [columns Position(1)];
+         columns = [columns Position'];
         
     else
         Red_flag = "True";
     end
     
+    N = N +1;
 end
+toc;
+
+
+
+
+
