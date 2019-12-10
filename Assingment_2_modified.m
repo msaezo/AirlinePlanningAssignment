@@ -10,10 +10,14 @@ Demand = xlsread('Group_31.xlsx','Itineraries','G2:G461'); %Demand of each itine
 Fare = xlsread('Group_31.xlsx','Itineraries','F2:F461'); %Fare of each itinerary
 [~,Itin_f1,~] = xlsread('Group_31.xlsx','Itineraries','D2:D461');
 [~,Itin_f2,~] = xlsread('Group_31.xlsx','Itineraries','E1:E461');
+Itin_f1_mod = [' ' ; Itin_f1];
+Itin_f2_mod = [' ' ; Itin_f2(2:end)];
+Itin = [string(Itin_f1_mod) string(Itin_f2_mod)];
+Flight = string(Flight);
 
 %addzeros = length(Itin_f1) - length(Itin_f2);
 %Itin_f2 = [zeros(addzeros,1) ; Itin_f2];
-Itin = [Itin_f1 Itin_f2(2:end)];
+%Itin = [Itin_f1 Itin_f2(2:end)];
 
 %Considering the ficticious itinerary
 
@@ -22,9 +26,11 @@ Itin = [Itin_f1 Itin_f2(2:end)];
 %Flight = ['CC0000';Flight];
 Demand = [0;Demand];
 Fare = [0;Fare];
-Itin = ['0' '0' ; Itin];
 
-
+%Zero = {'CC0000' 'CC0000'};
+%Itin = [Zero ; Itin];
+%Itin = {[Itin{1};Itin{2}]};
+%Itin = Itin{:};
 
 P = length(Fare); %Number of itineraries 9 = 8 + 1
 L = length(Flight); %Number of flights 6
@@ -46,6 +52,7 @@ end
 b(:,1) = 1;
 b(1,:) = 0; 
 
+
 delta = zeros(L,P);
 for i=1:L
     for j=1:P
@@ -57,7 +64,7 @@ for i=1:L
         end
     end
 end
-Q = (delta*Demand')';
+Q = (delta*Demand);
 
 DV = P*P;
 % DV = (P-1)*P;
