@@ -1,9 +1,11 @@
 %% Assignment 1 - (AE4423-19 Airline Planning and Optimization)
 clc, clear all, close all
 % addpath('C:\Program Files\IBM\ILOG\CPLEX_Studio_Community129\cplex\matlab\x64_win64')
-%addpath('C:\Program
-%Files\IBM\ILOG\CPLEX_Studio129\cplex\matlab\x64_win64') Guille
-addpath('C:\Program Files\IBM\ILOG\CPLEX_Studio_Community129\cplex\matlab\x64_win64')
+addpath('C:\Program Files\IBM\ILOG\CPLEX_Studio129\cplex\matlab\x64_win64') % Guille
+% addpath('C:\Program Files\IBM\ILOG\CPLEX_Studio_Community129\cplex\matlab\x64_win64')
+tic
+
+%% DATA
 Cap = xlsread('Group_31.xlsx','Flights','F2:F133');%Capacity of each Flight
 [~,Flight,~]  = xlsread('Group_31.xlsx','Flights','A2:A133');
 Demand = xlsread('Group_31.xlsx','Itineraries','G2:G461'); %Demand of each itinerary
@@ -19,21 +21,13 @@ Flight = string(Flight);
 %Itin_f2 = [zeros(addzeros,1) ; Itin_f2];
 %Itin = [Itin_f1 Itin_f2(2:end)];
 
-%Considering the ficticious itinerary
-
 %%
-%Cap = [0;Cap];
-%Flight = ['CC0000';Flight];
+% Considering the ficticious itinerary
 Demand = [0;Demand];
 Fare = [0;Fare];
 
-%Zero = {'CC0000' 'CC0000'};
-%Itin = [Zero ; Itin];
-%Itin = {[Itin{1};Itin{2}]};
-%Itin = Itin{:};
-
-P = length(Fare); %Number of itineraries 9 = 8 + 1
-L = length(Flight); %Number of flights 6
+P = length(Fare); %Number of itineraries 
+L = length(Flight); %Number of flights 
 
 Itin_b_f1 = xlsread('Group_31.xlsx','Recapture','A2:A441');
 Itin_b_f2 = xlsread('Group_31.xlsx','Recapture','B2:B441');
@@ -43,15 +37,23 @@ Itin_b_f2 = Itin_b_f2 + 2;
 
 b = zeros(P); %Recapture ratio
 
+% The following loop is used to organize the itineraries as well as to
+% construct the recapture matrix
 for i = 1:length(Itin_b_f1)
         Itin_b_f1_i = Itin_b_f1(i);
         Itin_b_f1_j = Itin_b_f2(i);
         b(Itin_b_f1_i,Itin_b_f1_j) = Recap(i);
 end
 
+% The following variables are used to define that the recapture rate to
+% itinerary itself is equal to 1 for all p.
+diagonal = ones(length(Fare),1);
+b_diagonal = diag(diagonal);
+b = b + b_diagonal;
+
+% The recapture rate to the 'fictitious itinerary is equal to 1 fo all p.
 b(:,1) = 1;
 b(1,:) = 0; 
-
 
 delta = zeros(L,P);
 for i=1:L
@@ -65,6 +67,12 @@ for i=1:L
     end
 end
 Q = (delta*Demand);
+
+%% Initialize model
+
+model = 'Assignment1_p2'; % Name of the model
+cplex = Cplex(model); % Initialize Cplex
+cplex.Model.sense = 'minimize'; % Minimize spillage
 
 DV = P*P;
 % DV = (P-1)*P;
@@ -84,8 +92,6 @@ while Red_flag == "False"
     model = 'Assignment1_p2'; % Name of the model
     cplex = Cplex(model); % Initialize Cplex
     cplex.Model.sense = 'minimize'; % Minimize spillage
-
-
 
     %% Objective function
 
@@ -114,6 +120,8 @@ while Red_flag == "False"
             for r = 1:P
                 if sum(varindex_4(1, r, p, P) == columns) == 1
                     C1(varindex_4(1, r, p, P)) = delta(i,p);
+                end
+                if sum(varindex_4(1, p, r, P) == columns) == 1
                     C1(varindex_4(1, p, r, P)) = delta(i,p)*b(r,p);
                 end
             end
@@ -122,9 +130,7 @@ while Red_flag == "False"
         
         cplex.addRows(LHS,C1,inf,sprintf('Constraint1_%d',i));
     end
-
     %% Constraint 2
-
     for p = 1:P
     %     if p ~= 1
         C2 = zeros(1,DV);
@@ -137,7 +143,6 @@ while Red_flag == "False"
         cplex.addRows(-inf,C2,RHS,sprintf('Constraint2_%d',j));
     %     end
     end
-
     %% Solution
     cplex.writeModel([model '.lp']) %Store the model to an .lp file for debugging
     cplex.Param.timelimit.Cur = 10; %Timelimit of the solver in seconds, more useful for larger models
@@ -159,27 +164,66 @@ while Red_flag == "False"
             tnew(j,k) = Fare(j)-b(j,k)*Fare(k)+piprice(j,k)-sigmas(j);
         end
     end
-    Position_check = find(tnew==min(tnew(tnew<0)));
+%     Position_check = find(tnew==min(tnew(tnew<0)));
     
-    if N >= 1
-        if Position_check == Position
-            Red_flag = "True";
-        end
-    end
+%     if N >= 1
+%         if Position_check == Position
+%             Red_flag = "True";
+%         end
+%     end
     
+
+% This ''if'' is used to find if there is any negative value in the pricing
+% problem. If that is not the case, no more columns are added and the final
+% result is obtained.
+
     if any(any(tnew<0))  
-        Position = find(tnew==min(tnew(tnew<0)));
-         columns = [columns Position'];
+        neg_values = tnew(tnew<0); % Vector that contains all the negative 
+%         values in tnew
+        neg_values_ordered = sort(neg_values); % Vector that contains the 
+%         previous values organized from the most negative to the least 
+%         negative.
+        Red_flag_2 = "False";
+        p1 = 1;
+        while Red_flag_2 == "False" 
+            if p1 <= length(neg_values_ordered)
+                Position = find(tnew==neg_values_ordered(p1)); % This  
+%                variable is used to indicate which column should be added.
+
+%         Position = find(tnew==min(tnew(tnew<0)));  
+%             columns = [columns Position'];
+            
+                for p2 = 1:length(Position)
+                    if sum(columns==Position(p2)) == 0
+                        Position = Position;
+                    else
+                        Position = Position(Position~=Position(p2));
+                    end
+                end
+            
+                if isempty(Position) % Try the next negative value unless one new column can be added
+                    p1 = p1 + 1;
+                else
+                    Red_flag_2 = "True";
+                end
+            else
+                Red_flag_2 = "True";
+            end
+                 
+        end  
+        
+        % If there is no new column to be added the loop will stop
+        if isempty(Position)
+            Red_flag = "True";
+        else      
+            columns = [columns Position'];
+        end
         
     else
         Red_flag = "True";
-    end
-    
-    N = N +1;
+    end    
+    N = N +1; % Number of iteration
 end
 toc;
-
-
-
 
 
