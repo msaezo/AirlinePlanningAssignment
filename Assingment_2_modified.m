@@ -192,12 +192,15 @@ while Red_flag == "False"
 
 %         Position = find(tnew==min(tnew(tnew<0)));  
 %             columns = [columns Position'];
-            
+%                 clear p2
+                nn = 0;
                 for p2 = 1:length(Position)
+                    p2 = p2-nn;
                     if sum(columns==Position(p2)) == 0
                         Position = Position;
                     else
                         Position = Position(Position~=Position(p2));
+                        nn = nn + 1;
                     end
                 end
             
