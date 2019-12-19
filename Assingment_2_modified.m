@@ -145,7 +145,7 @@ while Red_flag == "False"
     end
     %% Solution
     cplex.writeModel([model '.lp']) %Store the model to an .lp file for debugging
-    cplex.Param.timelimit.Cur = 10; %Timelimit of the solver in seconds, more useful for larger models
+    cplex.Param.timelimit.Cur = 30; %Timelimit of the solver in seconds, more useful for larger models
     cplex.solve();
 
     dual_variables = cplex.Solution.dual; % Dual variables
@@ -228,5 +228,15 @@ while Red_flag == "False"
     N = N +1; % Number of iteration
 end
 toc;
+
+%% PLOTING - SOLUTIONS
+%added_cols = length(columns(P:end));
+%toc;
+%N;
+t_new = t(P+1:end)';
+t_new = reshape(t_new,[P,length(t_new)/P]);
+[t_row,t_col,t_v] = find(t_new);
+
+
 
 

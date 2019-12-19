@@ -78,3 +78,5664 @@ Log for '' Clone_2 (V12.9.0.0) Thu Dec  5 13:23:31 2019
 Log for 'Assignment1_group31' Clone_2 (V12.9.0.0) Thu Dec  5 13:23:32 2019
 >>>>>>> Stashed changes
 
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Mon Dec  9 13:11:19 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         14584.320000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Mon Dec  9 13:12:37 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         14502.320000
+Iteration:   281    Objective     =       1874922.000000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Mon Dec  9 13:14:03 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         14562.320000
+Iteration:   276    Objective     =       1885292.000000
+Iteration:   350    Objective     =       1822879.000000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Mon Dec  9 13:16:18 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         14562.320000
+Iteration:   291    Objective     =       1884426.990000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Mon Dec  9 13:17:14 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         14584.320000
+Iteration:   277    Objective     =       1890237.520000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Mon Dec  9 13:18:10 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         14572.320000
+Iteration:   278    Objective     =       1895389.880000
+Iteration:   354    Objective     =       1822390.910000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Mon Dec  9 13:19:06 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         14496.320000
+Iteration:   278    Objective     =       1878671.790000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Mon Dec  9 13:20:03 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         14496.320000
+Iteration:   288    Objective     =       1877137.590000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Mon Dec  9 13:20:58 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         14496.300000
+Iteration:   278    Objective     =       1881364.730000
+Iteration:   361    Objective     =       1818990.300000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Mon Dec  9 13:21:53 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         14562.320000
+Iteration:   287    Objective     =       1876576.450000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Mon Dec  9 13:22:47 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         14584.320000
+Iteration:   283    Objective     =       1861819.520000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Mon Dec  9 13:23:46 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         14524.320000
+Iteration:   285    Objective     =       1868799.050000
+Iteration:   359    Objective     =       1820704.790000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Mon Dec  9 13:24:54 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         14524.320000
+Iteration:   276    Objective     =       1871162.950000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Mon Dec  9 13:26:18 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         14524.320000
+Iteration:   282    Objective     =       1888886.480000
+Iteration:   359    Objective     =       1822519.000000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Mon Dec  9 13:27:48 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         13954.180000
+Iteration:   267    Objective     =       1839181.800000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Mon Dec  9 13:29:11 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         13954.180000
+Iteration:   270    Objective     =       1822174.490000
+Iteration:   344    Objective     =       1769677.000000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Mon Dec  9 13:39:14 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         13936.180000
+Iteration:   262    Objective     =       1825343.910000
+Iteration:   343    Objective     =       1770821.900000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Mon Dec  9 13:40:14 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         13902.180000
+Iteration:   264    Objective     =       1820968.910000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Mon Dec  9 13:41:04 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         13946.180000
+Iteration:   264    Objective     =       1823636.910000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Mon Dec  9 13:41:56 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         13932.180000
+Iteration:   260    Objective     =       1825056.130000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Mon Dec  9 13:42:47 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         13804.160000
+Iteration:   264    Objective     =       1829803.790000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Mon Dec  9 13:43:33 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         13804.160000
+Iteration:   261    Objective     =       1807369.090000
+Iteration:   336    Objective     =       1767458.380000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Mon Dec  9 13:44:21 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         13953.180000
+Iteration:   260    Objective     =       1829079.210000
+Iteration:   330    Objective     =       1770777.260000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Mon Dec  9 13:45:07 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         13953.180000
+Iteration:   260    Objective     =       1828505.210000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Mon Dec  9 13:45:54 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         13953.180000
+Iteration:   265    Objective     =       1815357.930000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Mon Dec  9 13:46:41 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         13832.160000
+Iteration:   271    Objective     =       1834108.210000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Mon Dec  9 13:47:31 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         13832.160000
+Iteration:   258    Objective     =       1825181.030000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Mon Dec  9 13:48:22 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         13832.160000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Mon Dec  9 13:49:13 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         13832.160000
+Iteration:   271    Objective     =       1840861.070000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Mon Dec  9 13:49:59 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         13832.160000
+Iteration:   261    Objective     =       1819685.370000
+Iteration:   333    Objective     =       1768817.030000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Mon Dec  9 13:50:44 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         13940.180000
+Iteration:   264    Objective     =       1824875.570000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Mon Dec  9 13:51:27 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         13940.180000
+Iteration:   262    Objective     =       1830261.330000
+Iteration:   348    Objective     =       1766160.600000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Mon Dec  9 13:52:10 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         13948.180000
+Iteration:   267    Objective     =       1830742.520000
+Iteration:   345    Objective     =       1773385.700000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Mon Dec  9 13:52:53 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         13948.180000
+Iteration:   267    Objective     =       1827930.030000
+Iteration:   354    Objective     =       1763531.170000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Mon Dec  9 13:53:35 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         13906.180000
+Iteration:   268    Objective     =       1814727.430000
+Iteration:   343    Objective     =       1763804.520000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Mon Dec  9 13:54:19 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         13906.180000
+Iteration:   267    Objective     =       1838654.410000
+Iteration:   350    Objective     =       1766960.290000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Mon Dec  9 13:55:17 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         13828.180000
+Iteration:   271    Objective     =       1846333.620000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Mon Dec  9 13:56:18 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         13828.180000
+Iteration:   268    Objective     =       1827914.560000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Mon Dec  9 13:57:13 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         13828.180000
+Iteration:   272    Objective     =       1834108.300000
+Iteration:   355    Objective     =       1760731.560000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Mon Dec  9 13:58:02 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         13828.180000
+Iteration:   267    Objective     =       1837066.220000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Mon Dec  9 13:58:55 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         13874.180000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Mon Dec  9 13:59:45 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         13874.180000
+Iteration:   260    Objective     =       1812539.540000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Mon Dec  9 14:00:28 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         13874.180000
+Iteration:   265    Objective     =       1818543.580000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Mon Dec  9 14:01:13 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         13681.160000
+Iteration:   256    Objective     =       1801529.160000
+Iteration:   330    Objective     =       1742448.040000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Mon Dec  9 14:02:05 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         13587.160000
+Iteration:   263    Objective     =       1802900.720000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Mon Dec  9 14:02:50 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         13679.160000
+Iteration:   263    Objective     =       1804564.010000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Mon Dec  9 14:03:38 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         13617.160000
+Iteration:   265    Objective     =       1797270.240000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Mon Dec  9 14:04:27 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         13617.160000
+Iteration:   258    Objective     =       1795099.190000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Mon Dec  9 14:05:15 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         13595.140000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Mon Dec  9 14:06:05 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         13653.160000
+Iteration:   265    Objective     =       1801201.550000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Mon Dec  9 14:06:55 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         13641.160000
+Iteration:   268    Objective     =       1807137.220000
+Iteration:   345    Objective     =       1740015.820000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Mon Dec  9 14:07:44 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         13631.160000
+Iteration:   263    Objective     =       1795920.770000
+Iteration:   344    Objective     =       1735528.480000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Mon Dec  9 14:08:31 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         13661.160000
+Iteration:   259    Objective     =       1801847.200000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Mon Dec  9 14:09:16 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         13581.140000
+Iteration:   260    Objective     =       1788679.290000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Mon Dec  9 14:10:03 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         13581.140000
+Iteration:   264    Objective     =       1800493.710000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Mon Dec  9 14:10:47 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         13581.140000
+Iteration:   265    Objective     =       1798227.790000
+Iteration:   356    Objective     =       1730273.770000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Mon Dec  9 14:11:33 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         13581.140000
+Iteration:   274    Objective     =       1790495.270000
+Iteration:   359    Objective     =       1735932.200000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Mon Dec  9 14:12:16 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         13581.140000
+Iteration:   265    Objective     =       1792787.700000
+Iteration:   351    Objective     =       1729349.770000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Mon Dec  9 14:13:02 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         13581.140000
+Iteration:   271    Objective     =       1810722.040000
+Iteration:   353    Objective     =       1733668.390000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Mon Dec  9 14:13:51 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         13581.140000
+Iteration:   259    Objective     =       1782646.120000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Mon Dec  9 14:14:35 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         13545.139999
+Iteration:   263    Objective     =       1785477.630000
+Iteration:   346    Objective     =       1709280.650000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Mon Dec  9 14:15:19 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         13545.139999
+Iteration:   261    Objective     =       1777695.780000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Mon Dec  9 14:16:03 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         13462.120000
+Iteration:   258    Objective     =       1784589.850000
+Iteration:   337    Objective     =       1713232.040000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Mon Dec  9 14:16:47 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         13462.120000
+Iteration:   264    Objective     =       1786836.390000
+Iteration:   338    Objective     =       1721856.310000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Mon Dec  9 14:17:34 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         13538.140000
+Iteration:   251    Objective     =       1776173.950000
+Iteration:   326    Objective     =       1706949.580000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Mon Dec  9 14:18:20 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         13544.140000
+Iteration:   259    Objective     =       1760352.430000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Mon Dec  9 14:19:05 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         13526.140000
+Iteration:   261    Objective     =       1770871.530000
+Iteration:   343    Objective     =       1704179.500000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Mon Dec  9 14:19:50 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         13548.140000
+Iteration:   256    Objective     =       1751314.400000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Mon Dec  9 14:20:35 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         13462.120000
+Iteration:   256    Objective     =       1760004.410000
+Iteration:   335    Objective     =       1699084.850000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Mon Dec  9 14:21:20 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         13633.140000
+Iteration:   256    Objective     =       1767276.770000
+Iteration:   336    Objective     =       1701025.520000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Mon Dec  9 14:22:06 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         13633.140000
+Iteration:   252    Objective     =       1758120.950000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Mon Dec  9 14:22:53 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         13633.140000
+Iteration:   257    Objective     =       1762302.330000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Mon Dec  9 14:23:38 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         13579.140000
+Iteration:   256    Objective     =       1761619.470000
+Iteration:   331    Objective     =       1703711.270000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Mon Dec  9 14:24:24 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         13583.139999
+Iteration:   255    Objective     =       1762393.550000
+Iteration:   339    Objective     =       1702814.450000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Mon Dec  9 14:25:09 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         13583.139999
+Iteration:   259    Objective     =       1763492.920000
+Iteration:   333    Objective     =       1701445.340000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Mon Dec  9 14:25:57 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         13418.100000
+Iteration:   249    Objective     =       1756513.700000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Mon Dec  9 14:26:46 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         13368.100000
+Iteration:   242    Objective     =       1731903.360000
+Iteration:   323    Objective     =       1680571.520000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Mon Dec  9 14:27:35 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         13368.100000
+Iteration:   250    Objective     =       1753056.300000
+Iteration:   323    Objective     =       1687812.130000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Mon Dec  9 14:28:23 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         13310.100000
+Iteration:   250    Objective     =       1747304.970000
+Iteration:   329    Objective     =       1690089.810000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Mon Dec  9 14:29:11 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         13310.100000
+Iteration:   252    Objective     =       1748693.120000
+Iteration:   335    Objective     =       1686170.800000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Mon Dec  9 14:29:57 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         13302.100000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Mon Dec  9 14:30:47 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         13523.119999
+Iteration:   254    Objective     =       1767098.510000
+Iteration:   339    Objective     =       1702380.002000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Mon Dec  9 14:31:38 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         13523.119999
+Iteration:   262    Objective     =       1759238.300000
+Iteration:   339    Objective     =       1698715.962000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Mon Dec  9 14:32:24 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         13523.119999
+Iteration:   257    Objective     =       1759218.624000
+Iteration:   333    Objective     =       1692581.902000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Mon Dec  9 14:33:11 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         13523.119999
+Iteration:   257    Objective     =       1749696.518000
+Iteration:   336    Objective     =       1694371.762000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Mon Dec  9 14:33:57 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         13523.119999
+Iteration:   257    Objective     =       1749321.158000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Mon Dec  9 14:34:44 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         13523.119999
+Iteration:   257    Objective     =       1746062.438000
+Iteration:   336    Objective     =       1690737.682000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Mon Dec  9 14:35:31 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         13441.119999
+Iteration:   246    Objective     =       1740613.574000
+Iteration:   317    Objective     =       1688287.582000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Mon Dec  9 14:36:19 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         13441.119999
+Iteration:   247    Objective     =       1742007.384000
+Iteration:   326    Objective     =       1684200.112000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Mon Dec  9 14:37:10 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         13441.119999
+Iteration:   246    Objective     =       1740613.574000
+Iteration:   317    Objective     =       1688287.582000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Mon Dec  9 14:38:05 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         13441.119999
+Iteration:   246    Objective     =       1740613.574000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Mon Dec  9 14:38:54 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         13441.119999
+Iteration:   246    Objective     =       1740613.574000
+Iteration:   317    Objective     =       1688287.582000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Mon Dec  9 14:39:48 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         13441.119999
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Mon Dec  9 14:40:43 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         13441.119999
+Iteration:   246    Objective     =       1740613.574000
+Iteration:   317    Objective     =       1688287.582000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Mon Dec  9 14:41:32 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         13441.119999
+Iteration:   246    Objective     =       1740613.574000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Mon Dec  9 14:42:20 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         13441.119999
+Iteration:   246    Objective     =       1740613.574000
+Iteration:   317    Objective     =       1688287.582000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Mon Dec  9 14:43:10 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         13441.119999
+Iteration:   246    Objective     =       1740613.574000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Mon Dec  9 14:44:01 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         13441.119999
+Iteration:   246    Objective     =       1740613.574000
+Iteration:   317    Objective     =       1688287.582000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Mon Dec  9 14:44:49 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         13441.119999
+Iteration:   246    Objective     =       1740613.574000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Mon Dec  9 14:45:36 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         13441.119999
+Iteration:   246    Objective     =       1740613.574000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Mon Dec  9 14:46:24 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         13441.119999
+Iteration:   246    Objective     =       1740613.574000
+Iteration:   317    Objective     =       1688287.582000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Mon Dec  9 14:47:15 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         13441.119999
+Iteration:   246    Objective     =       1740613.574000
+Iteration:   317    Objective     =       1688287.582000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Mon Dec  9 14:48:05 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         13441.119999
+Iteration:   246    Objective     =       1740613.574000
+Iteration:   317    Objective     =       1688287.582000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Mon Dec  9 14:48:57 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         13441.119999
+Iteration:   246    Objective     =       1740613.574000
+Iteration:   317    Objective     =       1688287.582000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Mon Dec  9 14:49:45 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         13441.119999
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Mon Dec  9 14:50:31 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         13441.119999
+Iteration:   246    Objective     =       1740613.574000
+Iteration:   317    Objective     =       1688287.582000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Mon Dec  9 14:51:21 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         13441.119999
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Mon Dec  9 14:52:09 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         13441.119999
+Iteration:   246    Objective     =       1740613.574000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Mon Dec  9 14:52:58 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         13441.119999
+Iteration:   246    Objective     =       1740613.574000
+Iteration:   317    Objective     =       1688287.582000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Mon Dec  9 14:53:46 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         13441.119999
+Iteration:   246    Objective     =       1740613.574000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Mon Dec  9 14:54:35 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         13441.119999
+Iteration:   246    Objective     =       1740613.574000
+Iteration:   317    Objective     =       1688287.582000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Mon Dec  9 14:55:26 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         13441.119999
+Iteration:   246    Objective     =       1740613.574000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Mon Dec  9 14:56:14 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         13441.119999
+Iteration:   246    Objective     =       1740613.574000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Mon Dec  9 14:57:03 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         13441.119999
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Mon Dec  9 14:57:57 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         13441.119999
+Iteration:   246    Objective     =       1740613.574000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Mon Dec  9 14:58:46 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         13441.119999
+Iteration:   246    Objective     =       1740613.574000
+Iteration:   317    Objective     =       1688287.582000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Mon Dec  9 14:59:37 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         13441.119999
+Iteration:   246    Objective     =       1740613.574000
+Iteration:   317    Objective     =       1688287.582000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Mon Dec  9 15:00:28 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         13441.119999
+Iteration:   246    Objective     =       1740613.574000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Mon Dec  9 15:01:24 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         13441.119999
+Iteration:   246    Objective     =       1740613.574000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Mon Dec  9 15:02:19 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         13441.119999
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Mon Dec  9 15:03:10 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         13441.119999
+Iteration:   246    Objective     =       1740613.574000
+Iteration:   317    Objective     =       1688287.582000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Mon Dec  9 15:03:59 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         13441.119999
+Iteration:   246    Objective     =       1740613.574000
+Iteration:   317    Objective     =       1688287.582000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Mon Dec  9 15:04:49 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         13441.119999
+Iteration:   246    Objective     =       1740613.574000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Mon Dec  9 15:05:41 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         13441.119999
+Iteration:   246    Objective     =       1740613.574000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Mon Dec  9 15:06:32 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         13441.119999
+Iteration:   246    Objective     =       1740613.574000
+Iteration:   317    Objective     =       1688287.582000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Mon Dec  9 15:07:20 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         13441.119999
+Iteration:   246    Objective     =       1740613.574000
+Iteration:   317    Objective     =       1688287.582000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Mon Dec  9 15:08:07 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         13441.119999
+Iteration:   246    Objective     =       1740613.574000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Mon Dec  9 15:09:01 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         13441.119999
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Mon Dec  9 15:09:51 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         13441.119999
+Iteration:   246    Objective     =       1740613.574000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Mon Dec  9 15:10:41 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         13441.119999
+Iteration:   246    Objective     =       1740613.574000
+Iteration:   317    Objective     =       1688287.582000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Mon Dec  9 15:11:32 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         13441.119999
+Iteration:   246    Objective     =       1740613.574000
+Iteration:   317    Objective     =       1688287.582000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Mon Dec  9 15:12:24 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         13441.119999
+Iteration:   246    Objective     =       1740613.574000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Mon Dec  9 15:13:14 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         13441.119999
+Iteration:   246    Objective     =       1740613.574000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Mon Dec  9 15:14:04 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         13441.119999
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Mon Dec  9 15:14:53 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         13441.119999
+Iteration:   246    Objective     =       1740613.574000
+Iteration:   317    Objective     =       1688287.582000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Mon Dec  9 15:15:42 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         13441.119999
+Iteration:   246    Objective     =       1740613.574000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Mon Dec  9 15:16:34 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         13441.119999
+Iteration:   246    Objective     =       1740613.574000
+Iteration:   317    Objective     =       1688287.582000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Mon Dec  9 15:17:26 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         13441.119999
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Mon Dec  9 15:18:19 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         13441.119999
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Mon Dec  9 15:19:12 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         13441.119999
+Iteration:   246    Objective     =       1740613.574000
+Iteration:   317    Objective     =       1688287.582000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Mon Dec  9 15:20:01 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         13441.119999
+Iteration:   246    Objective     =       1740613.574000
+Iteration:   317    Objective     =       1688287.582000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Mon Dec  9 15:20:50 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         13441.119999
+Iteration:   246    Objective     =       1740613.574000
+Iteration:   317    Objective     =       1688287.582000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Mon Dec  9 15:21:39 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         13441.119999
+Iteration:   246    Objective     =       1740613.574000
+Iteration:   317    Objective     =       1688287.582000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Mon Dec  9 15:22:28 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         13441.119999
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Mon Dec  9 15:23:18 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         13441.119999
+Iteration:   246    Objective     =       1740613.574000
+Iteration:   317    Objective     =       1688287.582000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Mon Dec  9 15:24:10 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         13441.119999
+Iteration:   246    Objective     =       1740613.574000
+Iteration:   317    Objective     =       1688287.582000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Mon Dec  9 15:25:01 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         13441.119999
+Iteration:   246    Objective     =       1740613.574000
+Iteration:   317    Objective     =       1688287.582000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Mon Dec  9 15:25:52 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         13441.119999
+Iteration:   246    Objective     =       1740613.574000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Mon Dec  9 15:26:42 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         13441.119999
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Mon Dec  9 15:27:33 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         13441.119999
+Iteration:   246    Objective     =       1740613.574000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Mon Dec  9 15:28:26 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         13441.119999
+Iteration:   246    Objective     =       1740613.574000
+Iteration:   317    Objective     =       1688287.582000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Mon Dec  9 15:29:20 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         13441.119999
+Iteration:   246    Objective     =       1740613.574000
+Iteration:   317    Objective     =       1688287.582000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Mon Dec  9 15:30:12 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         13441.119999
+Iteration:   246    Objective     =       1740613.574000
+Iteration:   317    Objective     =       1688287.582000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Mon Dec  9 15:31:03 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         13441.119999
+Iteration:   246    Objective     =       1740613.574000
+Iteration:   317    Objective     =       1688287.582000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Mon Dec  9 15:31:54 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         13441.119999
+Iteration:   246    Objective     =       1740613.574000
+Iteration:   317    Objective     =       1688287.582000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Mon Dec  9 15:32:44 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         13441.119999
+Iteration:   246    Objective     =       1740613.574000
+Iteration:   317    Objective     =       1688287.582000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Mon Dec  9 15:33:33 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         13441.119999
+Iteration:   246    Objective     =       1740613.574000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Mon Dec  9 15:34:25 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         13441.119999
+Iteration:   246    Objective     =       1740613.574000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Mon Dec  9 15:35:18 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         13441.119999
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Mon Dec  9 15:36:08 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         13441.119999
+Iteration:   246    Objective     =       1740613.574000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Mon Dec  9 15:37:00 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         13441.119999
+Iteration:   246    Objective     =       1740613.574000
+Iteration:   317    Objective     =       1688287.582000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Mon Dec  9 15:37:54 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         13441.119999
+Iteration:   246    Objective     =       1740613.574000
+Iteration:   317    Objective     =       1688287.582000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Mon Dec  9 15:38:47 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         13441.119999
+Iteration:   246    Objective     =       1740613.574000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Mon Dec  9 15:39:40 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         13441.119999
+Iteration:   246    Objective     =       1740613.574000
+Iteration:   317    Objective     =       1688287.582000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Mon Dec  9 15:40:31 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         13441.119999
+Iteration:   246    Objective     =       1740613.574000
+Iteration:   317    Objective     =       1688287.582000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Mon Dec  9 15:41:22 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         13441.119999
+Iteration:   246    Objective     =       1740613.574000
+Iteration:   317    Objective     =       1688287.582000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Mon Dec  9 15:42:13 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         13441.119999
+Iteration:   246    Objective     =       1740613.574000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Mon Dec  9 15:43:04 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         13441.119999
+Iteration:   246    Objective     =       1740613.574000
+Iteration:   317    Objective     =       1688287.582000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Mon Dec  9 15:43:55 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         13441.119999
+Iteration:   246    Objective     =       1740613.574000
+Iteration:   317    Objective     =       1688287.582000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Mon Dec  9 15:44:46 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         13441.119999
+Iteration:   246    Objective     =       1740613.574000
+Iteration:   317    Objective     =       1688287.582000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Mon Dec  9 15:45:37 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         13441.119999
+Iteration:   246    Objective     =       1740613.574000
+Iteration:   317    Objective     =       1688287.582000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Mon Dec  9 15:46:28 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         13441.119999
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Mon Dec  9 15:47:18 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         13441.119999
+Iteration:   246    Objective     =       1740613.574000
+Iteration:   317    Objective     =       1688287.582000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Mon Dec  9 15:48:11 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         13441.119999
+Iteration:   246    Objective     =       1740613.574000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Mon Dec  9 15:49:04 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         13441.119999
+Iteration:   246    Objective     =       1740613.574000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Mon Dec  9 15:50:01 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         13441.119999
+Iteration:   246    Objective     =       1740613.574000
+Iteration:   317    Objective     =       1688287.582000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Mon Dec  9 15:50:59 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         13441.119999
+Iteration:   246    Objective     =       1740613.574000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Mon Dec  9 20:05:00 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         13441.119999
+Iteration:   246    Objective     =       1740613.574000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Mon Dec  9 20:06:15 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         13441.119999
+Iteration:   246    Objective     =       1740613.574000
+Iteration:   317    Objective     =       1688287.582000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Mon Dec  9 20:08:08 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         13441.119999
+Iteration:   246    Objective     =       1740613.574000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Mon Dec  9 20:09:59 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         13441.119999
+Iteration:   246    Objective     =       1740613.574000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Mon Dec  9 20:11:51 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         13441.119999
+Iteration:   246    Objective     =       1740613.574000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Mon Dec  9 20:13:43 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         13441.119999
+Iteration:   246    Objective     =       1740613.574000
+Iteration:   317    Objective     =       1688287.582000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Mon Dec  9 20:15:34 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         13441.119999
+Iteration:   246    Objective     =       1740613.574000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Mon Dec  9 20:17:26 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         13441.119999
+Iteration:   246    Objective     =       1740613.574000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Mon Dec  9 20:19:17 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         13441.119999
+Iteration:   246    Objective     =       1740613.574000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Mon Dec  9 20:21:10 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         13441.119999
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Mon Dec  9 20:23:02 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         13441.119999
+Iteration:   246    Objective     =       1740613.574000
+Iteration:   317    Objective     =       1688287.582000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Mon Dec  9 20:24:54 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         13441.119999
+Iteration:   246    Objective     =       1740613.574000
+Iteration:   317    Objective     =       1688287.582000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Mon Dec  9 20:26:45 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         13441.119999
+Iteration:   246    Objective     =       1740613.574000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Mon Dec  9 20:28:38 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         13441.119999
+Iteration:   246    Objective     =       1740613.574000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Mon Dec  9 20:30:31 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         13441.119999
+Iteration:   246    Objective     =       1740613.574000
+Iteration:   317    Objective     =       1688287.582000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Mon Dec  9 20:32:25 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         13441.119999
+Iteration:   246    Objective     =       1740613.574000
+Iteration:   317    Objective     =       1688287.582000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Mon Dec  9 20:34:18 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         13441.119999
+Iteration:   246    Objective     =       1740613.574000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Mon Dec  9 20:36:11 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         13441.119999
+Iteration:   246    Objective     =       1740613.574000
+Iteration:   317    Objective     =       1688287.582000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Mon Dec  9 20:38:02 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         13441.119999
+Iteration:   246    Objective     =       1740613.574000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Mon Dec  9 20:39:55 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         13441.119999
+Iteration:   246    Objective     =       1740613.574000
+Iteration:   317    Objective     =       1688287.582000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Mon Dec  9 20:41:48 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         13441.119999
+Iteration:   246    Objective     =       1740613.574000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Mon Dec  9 20:43:39 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         13441.119999
+Iteration:   246    Objective     =       1740613.574000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Mon Dec  9 20:45:32 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         13441.119999
+Iteration:   246    Objective     =       1740613.574000
+Iteration:   317    Objective     =       1688287.582000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Mon Dec  9 20:47:24 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         13441.119999
+Iteration:   246    Objective     =       1740613.574000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Mon Dec  9 20:49:12 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         13441.119999
+Iteration:   246    Objective     =       1740613.574000
+Iteration:   317    Objective     =       1688287.582000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Mon Dec  9 20:51:06 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         13441.119999
+Iteration:   246    Objective     =       1740613.574000
+Iteration:   317    Objective     =       1688287.582000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Mon Dec  9 20:52:59 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         13441.119999
+Iteration:   246    Objective     =       1740613.574000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Mon Dec  9 20:54:52 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         13441.119999
+Iteration:   246    Objective     =       1740613.574000
+Iteration:   317    Objective     =       1688287.582000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Mon Dec  9 20:56:45 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         13441.119999
+Iteration:   246    Objective     =       1740613.574000
+Iteration:   317    Objective     =       1688287.582000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Mon Dec  9 20:58:38 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         13441.119999
+Iteration:   246    Objective     =       1740613.574000
+Iteration:   317    Objective     =       1688287.582000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Mon Dec  9 21:00:36 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         13441.119999
+Iteration:   246    Objective     =       1740613.574000
+Iteration:   317    Objective     =       1688287.582000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Mon Dec  9 21:02:35 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         13441.119999
+Iteration:   246    Objective     =       1740613.574000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Mon Dec  9 21:04:40 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         13441.119999
+Iteration:   246    Objective     =       1740613.574000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Mon Dec  9 21:06:54 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         13441.119999
+Iteration:   246    Objective     =       1740613.574000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Mon Dec  9 21:08:52 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         13441.119999
+Iteration:   246    Objective     =       1740613.574000
+Iteration:   317    Objective     =       1688287.582000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Mon Dec  9 21:10:30 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         13441.119999
+Iteration:   246    Objective     =       1740613.574000
+Iteration:   317    Objective     =       1688287.582000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Mon Dec  9 21:12:59 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         13441.119999
+Iteration:   246    Objective     =       1740613.574000
+Iteration:   317    Objective     =       1688287.582000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Mon Dec  9 21:15:15 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         13441.119999
+Iteration:   246    Objective     =       1740613.574000
+Iteration:   317    Objective     =       1688287.582000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Mon Dec  9 21:17:37 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         13441.119999
+Iteration:   246    Objective     =       1740613.574000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Mon Dec  9 21:19:47 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         13441.119999
+Iteration:   246    Objective     =       1740613.574000
+Iteration:   317    Objective     =       1688287.582000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Mon Dec  9 21:21:57 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         13441.119999
+Iteration:   246    Objective     =       1740613.574000
+Iteration:   317    Objective     =       1688287.582000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Mon Dec  9 21:24:06 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         13441.119999
+Iteration:   246    Objective     =       1740613.574000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Mon Dec  9 21:26:13 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         13441.119999
+Iteration:   246    Objective     =       1740613.574000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Mon Dec  9 21:28:32 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         13441.119999
+Iteration:   246    Objective     =       1740613.574000
+Iteration:   317    Objective     =       1688287.582000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Mon Dec  9 21:30:48 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         13441.119999
+Iteration:   246    Objective     =       1740613.574000
+Iteration:   317    Objective     =       1688287.582000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Mon Dec  9 21:32:58 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         13441.119999
+Iteration:   246    Objective     =       1740613.574000
+Iteration:   317    Objective     =       1688287.582000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Mon Dec  9 21:35:07 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         13441.119999
+Iteration:   246    Objective     =       1740613.574000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Mon Dec  9 21:37:27 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         13441.119999
+Iteration:   246    Objective     =       1740613.574000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Mon Dec  9 21:39:36 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         13441.119999
+Iteration:   246    Objective     =       1740613.574000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Tue Dec 10 09:53:38 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         13441.119999
+Iteration:   246    Objective     =       1740613.574000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Tue Dec 10 15:05:33 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         14584.320000
+Iteration:   278    Objective     =       1869446.000000
+Iteration:   360    Objective     =       1822189.000000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Tue Dec 10 15:06:58 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         14584.320000
+Iteration:   278    Objective     =       1869446.000000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Tue Dec 10 15:14:01 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         14584.320000
+Iteration:   278    Objective     =       1869446.000000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Tue Dec 10 15:28:43 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         14584.320000
+Iteration:   278    Objective     =       1869446.000000
+Iteration:   360    Objective     =       1822189.000000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Tue Dec 10 15:29:28 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         14502.320000
+Iteration:   281    Objective     =       1874922.000000
+Iteration:   359    Objective     =       1822669.000000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Tue Dec 10 15:30:15 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         14562.320000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Tue Dec 10 15:37:05 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         14562.320000
+Iteration:   291    Objective     =       1884426.990000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Tue Dec 10 15:37:50 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         14584.320000
+Iteration:   277    Objective     =       1890237.520000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Tue Dec 10 15:38:36 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         14572.320000
+Iteration:   278    Objective     =       1895389.880000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Tue Dec 10 15:39:21 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         14496.320000
+Iteration:   278    Objective     =       1878671.790000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Tue Dec 10 15:40:07 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         14496.320000
+Iteration:   288    Objective     =       1877137.590000
+Iteration:   384    Objective     =       1814248.140000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Tue Dec 10 15:40:53 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         14496.300000
+Iteration:   278    Objective     =       1881364.730000
+Iteration:   361    Objective     =       1818990.300000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Tue Dec 10 15:41:39 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         14562.320000
+Iteration:   287    Objective     =       1876576.450000
+Iteration:   368    Objective     =       1814239.540000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Tue Dec 10 15:42:24 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         14584.320000
+Iteration:   283    Objective     =       1861819.520000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Tue Dec 10 15:43:10 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         14524.320000
+Iteration:   285    Objective     =       1868799.050000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Tue Dec 10 15:43:56 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         14524.320000
+Iteration:   276    Objective     =       1871162.950000
+Iteration:   347    Objective     =       1815895.260000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Tue Dec 10 15:44:42 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         14524.320000
+Iteration:   282    Objective     =       1888886.480000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Tue Dec 10 15:45:27 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         13954.180000
+Iteration:   267    Objective     =       1839181.800000
+Iteration:   341    Objective     =       1776327.520000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Tue Dec 10 15:46:13 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         13954.180000
+Iteration:   270    Objective     =       1822174.490000
+Iteration:   344    Objective     =       1769677.000000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Tue Dec 10 15:46:59 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         13936.180000
+Iteration:   262    Objective     =       1825343.910000
+Iteration:   343    Objective     =       1770821.900000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Tue Dec 10 15:47:47 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         13902.180000
+Iteration:   264    Objective     =       1820968.910000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Tue Dec 10 15:48:34 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         13946.180000
+Iteration:   264    Objective     =       1823636.910000
+Iteration:   342    Objective     =       1770209.370000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Tue Dec 10 15:49:20 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         13932.180000
+Iteration:   260    Objective     =       1825056.130000
+Iteration:   340    Objective     =       1769630.150000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Tue Dec 10 15:50:05 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         13804.160000
+Iteration:   264    Objective     =       1829803.790000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Tue Dec 10 15:50:52 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         13804.160000
+Iteration:   261    Objective     =       1807369.090000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Tue Dec 10 15:51:38 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         13953.180000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Tue Dec 10 15:52:26 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         13953.180000
+Iteration:   260    Objective     =       1828505.210000
+Iteration:   330    Objective     =       1770203.260000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Tue Dec 10 15:53:12 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         13953.180000
+Iteration:   265    Objective     =       1815357.930000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Tue Dec 10 15:53:59 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         13832.160000
+Iteration:   271    Objective     =       1834108.210000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Tue Dec 10 15:54:46 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         13832.160000
+Iteration:   258    Objective     =       1825181.030000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Tue Dec 10 15:55:31 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         13832.160000
+Iteration:   263    Objective     =       1818265.150000
+Iteration:   333    Objective     =       1767726.180000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Tue Dec 10 15:56:15 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         13832.160000
+Iteration:   271    Objective     =       1840861.070000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Tue Dec 10 15:56:59 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         13832.160000
+Iteration:   261    Objective     =       1819685.370000
+Iteration:   333    Objective     =       1768817.030000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Tue Dec 10 15:57:44 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         13940.180000
+Iteration:   264    Objective     =       1824875.570000
+Iteration:   343    Objective     =       1766132.740000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Tue Dec 10 15:58:29 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         13940.180000
+Iteration:   262    Objective     =       1830261.330000
+Iteration:   348    Objective     =       1766160.600000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Tue Dec 10 15:59:14 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         13948.180000
+Iteration:   267    Objective     =       1830742.520000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Tue Dec 10 15:59:58 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         13948.180000
+Iteration:   267    Objective     =       1827930.030000
+Iteration:   354    Objective     =       1763531.170000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Tue Dec 10 16:00:46 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         13906.180000
+Iteration:   268    Objective     =       1814727.430000
+Iteration:   343    Objective     =       1763804.520000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Tue Dec 10 16:01:31 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         13906.180000
+Iteration:   267    Objective     =       1838654.410000
+Iteration:   350    Objective     =       1766960.290000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Tue Dec 10 16:02:15 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         13828.180000
+Iteration:   271    Objective     =       1846333.620000
+Iteration:   360    Objective     =       1759957.500000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Tue Dec 10 16:02:58 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         13828.180000
+Iteration:   268    Objective     =       1827914.560000
+Iteration:   345    Objective     =       1762727.780000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Tue Dec 10 16:03:43 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         13828.180000
+Iteration:   272    Objective     =       1834108.300000
+Iteration:   355    Objective     =       1760731.560000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Tue Dec 10 16:04:29 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         13828.180000
+Iteration:   267    Objective     =       1837066.220000
+Iteration:   344    Objective     =       1764156.970000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Tue Dec 10 16:05:12 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         13874.180000
+Iteration:   260    Objective     =       1813535.570000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Tue Dec 10 16:05:56 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         13874.180000
+Iteration:   260    Objective     =       1812539.540000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Tue Dec 10 16:06:43 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         13874.180000
+Iteration:   265    Objective     =       1818543.580000
+Iteration:   345    Objective     =       1755973.910000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Tue Dec 10 16:07:29 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         13681.160000
+Iteration:   256    Objective     =       1801529.160000
+Iteration:   330    Objective     =       1742448.040000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Tue Dec 10 16:08:18 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         13587.160000
+Iteration:   263    Objective     =       1802900.720000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Tue Dec 10 16:09:04 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         13679.160000
+Iteration:   263    Objective     =       1804564.010000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Tue Dec 10 16:09:47 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         13617.160000
+Iteration:   265    Objective     =       1797270.240000
+Iteration:   348    Objective     =       1734608.580000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Tue Dec 10 16:10:31 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         13617.160000
+Iteration:   258    Objective     =       1795099.190000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Tue Dec 10 16:11:16 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         13595.140000
+Iteration:   264    Objective     =       1793325.050000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Tue Dec 10 16:12:01 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         13653.160000
+Iteration:   265    Objective     =       1801201.550000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Tue Dec 10 16:12:46 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         13641.160000
+Iteration:   268    Objective     =       1807137.220000
+Iteration:   345    Objective     =       1740015.820000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Tue Dec 10 16:13:56 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         13631.160000
+Iteration:   263    Objective     =       1795920.770000
+Iteration:   344    Objective     =       1735528.480000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Tue Dec 10 16:15:32 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         13661.160000
+Iteration:   259    Objective     =       1801847.200000
+Iteration:   340    Objective     =       1740418.700000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Tue Dec 10 16:17:09 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         13581.140000
+Iteration:   260    Objective     =       1788679.290000
+Iteration:   337    Objective     =       1728673.110000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Tue Dec 10 16:18:46 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         13581.140000
+Iteration:   264    Objective     =       1800493.710000
+Iteration:   350    Objective     =       1732320.380000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Tue Dec 10 16:20:23 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         13581.140000
+Iteration:   265    Objective     =       1798227.790000
+Iteration:   356    Objective     =       1730273.770000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Tue Dec 10 16:21:59 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         13581.140000
+Iteration:   274    Objective     =       1790495.270000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Tue Dec 10 16:23:37 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         13581.140000
+Iteration:   265    Objective     =       1792787.700000
+Iteration:   351    Objective     =       1729349.770000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Tue Dec 10 16:25:14 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         13581.140000
+Iteration:   271    Objective     =       1810722.040000
+Iteration:   353    Objective     =       1733668.390000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Tue Dec 10 16:26:50 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         13581.140000
+Iteration:   259    Objective     =       1782646.120000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Tue Dec 10 16:28:28 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         13545.139999
+Iteration:   263    Objective     =       1785477.630000
+Iteration:   346    Objective     =       1709280.650000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Tue Dec 10 16:30:07 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         13545.139999
+Iteration:   261    Objective     =       1777695.780000
+Iteration:   344    Objective     =       1711760.700000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Tue Dec 10 16:31:44 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         13462.120000
+Iteration:   258    Objective     =       1784589.850000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Tue Dec 10 16:33:23 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         13462.120000
+Iteration:   264    Objective     =       1786836.390000
+Iteration:   338    Objective     =       1721856.310000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Tue Dec 10 16:35:01 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         13538.140000
+Iteration:   251    Objective     =       1776173.950000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Tue Dec 10 16:36:38 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         13544.140000
+Iteration:   259    Objective     =       1760352.430000
+Iteration:   341    Objective     =       1701285.330000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Tue Dec 10 16:38:16 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         13526.140000
+Iteration:   261    Objective     =       1770871.530000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Tue Dec 10 16:39:53 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         13548.140000
+Iteration:   256    Objective     =       1751314.400000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Tue Dec 10 16:41:31 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         13462.120000
+Iteration:   256    Objective     =       1760004.410000
+Iteration:   335    Objective     =       1699084.850000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Tue Dec 10 16:43:10 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         13633.140000
+Iteration:   256    Objective     =       1767276.770000
+Iteration:   336    Objective     =       1701025.520000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Tue Dec 10 16:44:49 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         13633.140000
+Iteration:   252    Objective     =       1758120.950000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Tue Dec 10 16:46:27 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         13633.140000
+Iteration:   257    Objective     =       1762302.330000
+Iteration:   338    Objective     =       1702746.860000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Tue Dec 10 16:48:07 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         13579.140000
+Iteration:   256    Objective     =       1761619.470000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Tue Dec 10 16:49:39 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         13583.139999
+Iteration:   255    Objective     =       1762393.550000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Tue Dec 10 16:51:18 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         13583.139999
+Iteration:   259    Objective     =       1763492.920000
+Iteration:   333    Objective     =       1701445.340000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Tue Dec 10 16:52:58 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         13418.100000
+Iteration:   249    Objective     =       1756513.700000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Tue Dec 10 16:54:37 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         13368.100000
+Iteration:   242    Objective     =       1731903.360000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Tue Dec 10 16:56:17 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         13368.100000
+Iteration:   250    Objective     =       1753056.300000
+Iteration:   323    Objective     =       1687812.130000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Tue Dec 10 16:57:57 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         13310.100000
+Iteration:   250    Objective     =       1747304.970000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Tue Dec 10 16:59:37 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         13310.100000
+Iteration:   252    Objective     =       1748693.120000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Tue Dec 10 17:00:49 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         13302.100000
+Iteration:   252    Objective     =       1747739.000000
+Iteration:   329    Objective     =       1681636.880000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Tue Dec 10 17:01:55 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         13523.119999
+Iteration:   254    Objective     =       1767098.510000
+Iteration:   339    Objective     =       1702380.002000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Tue Dec 10 17:02:53 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         13523.119999
+Iteration:   262    Objective     =       1759238.300000
+Iteration:   339    Objective     =       1698715.962000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Tue Dec 10 17:03:51 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         13523.119999
+Iteration:   257    Objective     =       1759218.624000
+Iteration:   333    Objective     =       1692581.902000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Tue Dec 10 17:04:49 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         13523.119999
+Iteration:   257    Objective     =       1749696.518000
+Iteration:   336    Objective     =       1694371.762000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Tue Dec 10 17:05:47 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         13523.119999
+Iteration:   257    Objective     =       1749321.158000
+Iteration:   336    Objective     =       1693996.402000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Tue Dec 10 17:06:44 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         13523.119999
+Iteration:   257    Objective     =       1746062.438000
+Iteration:   336    Objective     =       1690737.682000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Tue Dec 10 17:07:42 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         13441.119999
+Iteration:   246    Objective     =       1740613.574000
+Iteration:   317    Objective     =       1688287.582000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Tue Dec 10 17:21:03 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         12089.060000
+Iteration:   243    Objective     =       1812364.000000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Tue Dec 10 17:21:48 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         12021.060000
+Iteration:   247    Objective     =       1819699.400000
+Iteration:   317    Objective     =       1753444.400000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Tue Dec 10 17:22:31 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         12009.060000
+Iteration:   252    Objective     =       1820630.960000
+Iteration:   329    Objective     =       1751055.200000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Tue Dec 10 17:23:15 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         12093.060000
+Iteration:   255    Objective     =       1804214.100000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Tue Dec 10 17:23:59 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         12067.060000
+Iteration:   248    Objective     =       1809334.020000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Tue Dec 10 17:24:43 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         12055.060000
+Iteration:   247    Objective     =       1806314.180000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Tue Dec 10 17:25:27 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         12055.060000
+Iteration:   247    Objective     =       1805964.740000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Tue Dec 10 17:26:14 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         12055.060000
+Iteration:   249    Objective     =       1806002.760000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Tue Dec 10 17:27:30 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         12057.060000
+Iteration:   257    Objective     =       1813884.660000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Tue Dec 10 17:28:44 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         12057.060000
+Iteration:   257    Objective     =       1813608.300000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Tue Dec 10 17:29:43 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         12101.060000
+Iteration:   255    Objective     =       1808956.300000
+Iteration:   332    Objective     =       1748693.300000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Tue Dec 10 17:30:30 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         12039.060000
+Iteration:   249    Objective     =       1802534.950000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Tue Dec 10 17:31:18 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         12027.060000
+Iteration:   243    Objective     =       1815479.770000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Tue Dec 10 17:32:06 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         11909.040000
+Iteration:   248    Objective     =       1820132.050000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Tue Dec 10 17:33:06 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         11909.040000
+Iteration:   249    Objective     =       1814307.600000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Tue Dec 10 17:34:14 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         11551.000000
+Iteration:   229    Objective     =       1796693.900000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Tue Dec 10 17:35:26 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         11551.000000
+Iteration:   229    Objective     =       1796693.900000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Tue Dec 10 17:36:46 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         11595.000000
+Iteration:   238    Objective     =       1780141.230000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Tue Dec 10 17:37:40 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         11566.980000
+Iteration:   232    Objective     =       1780724.750000
+Iteration:   301    Objective     =       1727102.300000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Tue Dec 10 17:39:40 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         11566.980000
+Iteration:   232    Objective     =       1782453.920000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Tue Dec 10 17:40:21 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         11609.000000
+Iteration:   237    Objective     =       1789204.350000
+Iteration:   312    Objective     =       1725789.250000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Tue Dec 10 17:43:28 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         11658.000000
+Iteration:   236    Objective     =       1790738.010000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Tue Dec 10 17:44:28 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         11654.000000
+Iteration:   244    Objective     =       1787108.700000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Tue Dec 10 18:42:15 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         11654.000000
+Iteration:   235    Objective     =       1804569.710000
+Iteration:   311    Objective     =       1723724.310000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Tue Dec 10 18:43:37 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         12089.060000
+Iteration:   243    Objective     =       1812364.000000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Tue Dec 10 18:44:15 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         12021.060000
+Iteration:   247    Objective     =       1819699.400000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Tue Dec 10 18:44:53 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         12009.060000
+Iteration:   252    Objective     =       1820630.960000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Tue Dec 10 18:45:31 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         12093.060000
+Iteration:   255    Objective     =       1804214.100000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Tue Dec 10 18:46:08 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         12067.060000
+Iteration:   248    Objective     =       1809334.020000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Tue Dec 10 18:46:48 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         12055.060000
+Iteration:   247    Objective     =       1806314.180000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Tue Dec 10 18:47:27 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         12055.060000
+Iteration:   247    Objective     =       1805964.740000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Tue Dec 10 18:48:05 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         12055.060000
+Iteration:   249    Objective     =       1806002.760000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Tue Dec 10 18:48:43 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         12057.060000
+Iteration:   257    Objective     =       1813884.660000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Tue Dec 10 18:49:22 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         12057.060000
+Iteration:   257    Objective     =       1813608.300000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Tue Dec 10 18:50:00 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         12101.060000
+Iteration:   255    Objective     =       1808956.300000
+Iteration:   332    Objective     =       1748693.300000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Tue Dec 10 18:50:38 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         12039.060000
+Iteration:   249    Objective     =       1802534.950000
+Iteration:   319    Objective     =       1745361.850000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Tue Dec 10 18:51:19 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         12027.060000
+Iteration:   243    Objective     =       1815479.770000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Tue Dec 10 18:51:57 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         11909.040000
+Iteration:   248    Objective     =       1820132.050000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Tue Dec 10 18:52:35 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         11909.040000
+Iteration:   249    Objective     =       1814307.600000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Tue Dec 10 18:53:14 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         11551.000000
+Iteration:   229    Objective     =       1796693.900000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Tue Dec 10 18:53:53 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         11551.000000
+Iteration:   229    Objective     =       1796693.900000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Tue Dec 10 18:54:32 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         11595.000000
+Iteration:   238    Objective     =       1780141.230000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Tue Dec 10 18:55:10 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         11566.980000
+Iteration:   232    Objective     =       1780724.750000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Tue Dec 10 18:55:49 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         11566.980000
+Iteration:   232    Objective     =       1782453.920000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Tue Dec 10 18:56:28 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         11609.000000
+Iteration:   237    Objective     =       1789204.350000
+Iteration:   312    Objective     =       1725789.250000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Tue Dec 10 18:57:07 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         11658.000000
+Iteration:   236    Objective     =       1790738.010000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Tue Dec 10 18:57:46 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         11654.000000
+Iteration:   244    Objective     =       1787108.700000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Tue Dec 10 18:58:26 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         11654.000000
+Iteration:   235    Objective     =       1804569.710000
+Iteration:   311    Objective     =       1723724.310000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Tue Dec 10 18:59:05 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         11654.000000
+Iteration:   240    Objective     =       1785525.510000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Tue Dec 10 18:59:45 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         11643.000000
+Iteration:   230    Objective     =       1797431.980000
+Iteration:   304    Objective     =       1729813.480000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Tue Dec 10 19:00:23 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         11643.000000
+Iteration:   233    Objective     =       1788319.070000
+Iteration:   302    Objective     =       1726012.280000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Tue Dec 10 19:01:03 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         11649.000000
+Iteration:   227    Objective     =       1777150.990000
+Iteration:   295    Objective     =       1719318.440000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Tue Dec 10 19:01:42 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         11627.000000
+Iteration:   241    Objective     =       1791085.680000
+Iteration:   315    Objective     =       1719441.770000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Tue Dec 10 19:02:21 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         11641.000000
+Iteration:   237    Objective     =       1793846.850000
+Iteration:   308    Objective     =       1719027.770000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Tue Dec 10 19:03:00 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         11351.980000
+Iteration:   220    Objective     =       1762595.390000
+Iteration:   297    Objective     =       1698355.650000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Tue Dec 10 19:03:39 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         10620.900000
+Iteration:   216    Objective     =       1747229.370000
+Iteration:   286    Objective     =       1687086.770000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Tue Dec 10 19:04:19 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         10620.900000
+Iteration:   218    Objective     =       1741411.980000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Tue Dec 10 19:04:58 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         10674.900000
+Iteration:   222    Objective     =       1738839.310000
+Iteration:   296    Objective     =       1680933.930000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Tue Dec 10 19:05:38 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         10674.900000
+Iteration:   218    Objective     =       1738473.260000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Tue Dec 10 19:06:17 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         10636.900000
+Iteration:   213    Objective     =       1733303.720000
+Iteration:   282    Objective     =       1679679.820000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Tue Dec 10 19:06:56 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         10622.900000
+Iteration:   225    Objective     =       1743077.140000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Tue Dec 10 19:07:36 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         10622.900000
+Iteration:   225    Objective     =       1743077.140000
+Iteration:   297    Objective     =       1679624.380000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Tue Dec 10 19:08:16 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         10622.900000
+Iteration:   222    Objective     =       1737475.520000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Tue Dec 10 19:08:56 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         10624.900000
+Iteration:   227    Objective     =       1739192.590000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Tue Dec 10 19:09:36 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         10624.900000
+Iteration:   223    Objective     =       1744381.540000
+Iteration:   299    Objective     =       1681116.470000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Tue Dec 10 19:10:16 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         10586.880000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Tue Dec 10 19:10:56 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         10586.880000
+Iteration:   228    Objective     =       1736716.240000
+Iteration:   300    Objective     =       1677335.970000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Tue Dec 10 19:11:36 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         10668.900000
+Iteration:   223    Objective     =       1747717.330000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Tue Dec 10 19:12:18 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         10654.900000
+Iteration:   215    Objective     =       1741469.850000
+Iteration:   285    Objective     =       1683065.210000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Tue Dec 10 19:12:58 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         10654.900000
+Iteration:   221    Objective     =       1726603.870000
+Iteration:   292    Objective     =       1677304.890000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Tue Dec 10 19:13:38 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         10654.900000
+Iteration:   217    Objective     =       1740590.280000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Tue Dec 10 19:14:19 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         10622.900000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Tue Dec 10 19:15:01 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         10610.900000
+Iteration:   221    Objective     =       1749294.470000
+Iteration:   298    Objective     =       1677033.360000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Tue Dec 10 19:15:43 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         10622.900000
+Iteration:   226    Objective     =       1729570.260000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Tue Dec 10 19:16:24 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         10650.900000
+Iteration:   221    Objective     =       1717774.180000
+Iteration:   300    Objective     =       1671405.290000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Tue Dec 10 19:17:04 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         10650.900000
+Iteration:   212    Objective     =       1731271.410000
+Iteration:   282    Objective     =       1682375.200000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Tue Dec 10 19:17:45 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         10512.880000
+Iteration:   211    Objective     =       1722350.560000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Tue Dec 10 19:18:25 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         10512.880000
+Iteration:   219    Objective     =       1715756.400000
+Iteration:   295    Objective     =       1668570.610000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Tue Dec 10 19:19:06 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         11072.840000
+Iteration:   242    Objective     =       1744250.450000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Tue Dec 10 19:19:47 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         10953.829999
+Iteration:   228    Objective     =       1728250.600000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Tue Dec 10 19:20:28 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         10953.829999
+Iteration:   237    Objective     =       1733790.100000
+Iteration:   320    Objective     =       1683207.110000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Tue Dec 10 19:21:08 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         10953.829999
+Iteration:   235    Objective     =       1728412.470000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Tue Dec 10 19:21:49 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         10411.880000
+Iteration:   226    Objective     =       1727363.010000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Fri Dec 13 21:51:11 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         12089.060000
+Iteration:   243    Objective     =       1812364.000000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Fri Dec 13 21:53:24 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         12021.060000
+Iteration:   247    Objective     =       1819699.400000
+Iteration:   317    Objective     =       1753444.400000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Fri Dec 13 21:55:38 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         12021.060000
+Iteration:   247    Objective     =       1819699.400000
+Iteration:   317    Objective     =       1753444.400000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Fri Dec 13 21:57:52 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         12091.060000
+Iteration:   249    Objective     =       1819813.400000
+Iteration:   318    Objective     =       1754610.400000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Fri Dec 13 21:59:56 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         12009.060000
+Iteration:   245    Objective     =       1809458.400000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Fri Dec 13 22:01:14 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         12093.060000
+Iteration:   249    Objective     =       1819321.580000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Fri Dec 13 22:02:32 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         12093.060000
+Iteration:   249    Objective     =       1818972.140000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Fri Dec 13 22:03:50 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         12109.990000
+Iteration:   254    Objective     =       1820743.140000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Fri Dec 13 22:05:08 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         12101.990000
+Iteration:   247    Objective     =       1821593.840000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Fri Dec 13 22:06:26 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         12101.990000
+Iteration:   247    Objective     =       1821317.480000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Fri Dec 13 22:07:43 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         12103.990000
+Iteration:   252    Objective     =       1809653.680000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Fri Dec 13 22:09:02 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         12105.990000
+Iteration:   254    Objective     =       1804385.130000
+Iteration:   330    Objective     =       1748725.130000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Fri Dec 13 22:10:19 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         12075.990000
+Iteration:   244    Objective     =       1797280.930000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Fri Dec 13 22:11:37 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         12193.600000
+Iteration:   246    Objective     =       1803988.930000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Fri Dec 13 22:12:54 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         12129.600000
+Iteration:   245    Objective     =       1799798.380000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Fri Dec 13 22:14:10 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         12219.480000
+Iteration:   254    Objective     =       1804683.930000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Fri Dec 13 22:15:27 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         12239.480000
+Iteration:   255    Objective     =       1798228.980000
+Iteration:   330    Objective     =       1746173.580000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Fri Dec 13 22:16:46 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         12312.490000
+Iteration:   254    Objective     =       1795636.980000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Fri Dec 13 22:18:04 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         12278.470000
+Iteration:   252    Objective     =       1814647.180000
+Iteration:   324    Objective     =       1748462.780000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Fri Dec 13 22:19:22 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         12281.470000
+Iteration:   256    Objective     =       1810028.600000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Fri Dec 13 22:20:40 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         12339.490000
+Iteration:   261    Objective     =       1804100.990000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Fri Dec 13 22:22:00 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         12339.490000
+Iteration:   264    Objective     =       1799525.990000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Fri Dec 13 22:23:20 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         12413.490000
+Iteration:   260    Objective     =       1814916.490000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Fri Dec 13 22:24:39 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         12413.490000
+Iteration:   258    Objective     =       1805813.490000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Fri Dec 13 22:25:59 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         12413.490000
+Iteration:   258    Objective     =       1805813.490000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Fri Dec 13 22:27:18 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         12331.470000
+Iteration:   257    Objective     =       1807358.720000
+Iteration:   335    Objective     =       1741826.080000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Fri Dec 13 22:28:38 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         12427.280000
+Iteration:   260    Objective     =       1808207.440000
+Iteration:   335    Objective     =       1742423.350000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Sat Dec 14 13:26:10 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         12089.060000
+Iteration:   243    Objective     =       1812364.000000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Sat Dec 14 13:27:13 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         12021.060000
+Iteration:   247    Objective     =       1819699.400000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Sat Dec 14 13:28:18 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         12021.060000
+Iteration:   247    Objective     =       1819699.400000
+Iteration:   317    Objective     =       1753444.400000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Sat Dec 14 13:29:24 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         12091.060000
+Iteration:   249    Objective     =       1819813.400000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Sat Dec 14 13:30:33 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         12009.060000
+Iteration:   245    Objective     =       1809458.400000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Sat Dec 14 13:31:39 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         12093.060000
+Iteration:   249    Objective     =       1819321.580000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Sat Dec 14 13:32:48 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         12093.060000
+Iteration:   249    Objective     =       1818972.140000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Sat Dec 14 13:33:57 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         12109.990000
+Iteration:   254    Objective     =       1820743.140000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Sat Dec 14 13:35:07 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         12101.990000
+Iteration:   247    Objective     =       1821593.840000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Sat Dec 14 13:36:15 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         12101.990000
+Iteration:   247    Objective     =       1821317.480000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Sat Dec 14 16:37:20 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         12103.990000
+Iteration:   252    Objective     =       1809653.680000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Sat Dec 14 16:38:40 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         12105.990000
+Iteration:   254    Objective     =       1804385.130000
+Iteration:   330    Objective     =       1748725.130000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Sat Dec 14 16:40:28 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         12075.990000
+Iteration:   244    Objective     =       1797280.930000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Sat Dec 14 16:41:50 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         12193.600000
+Iteration:   246    Objective     =       1803988.930000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Sat Dec 14 16:43:13 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         12129.600000
+Iteration:   245    Objective     =       1799798.380000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Sat Dec 14 16:44:37 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         12219.480000
+Iteration:   254    Objective     =       1804683.930000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Sat Dec 14 16:49:06 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         12089.060000
+Iteration:   243    Objective     =       1812364.000000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Sat Dec 14 16:50:28 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         12021.060000
+Iteration:   247    Objective     =       1819699.400000
+Iteration:   317    Objective     =       1753444.400000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Sat Dec 14 16:51:46 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         12021.060000
+Iteration:   247    Objective     =       1819699.400000
+Iteration:   317    Objective     =       1753444.400000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Sat Dec 14 16:53:07 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         12091.060000
+Iteration:   249    Objective     =       1819813.400000
+Iteration:   318    Objective     =       1754610.400000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Sat Dec 14 16:54:27 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         12009.060000
+Iteration:   245    Objective     =       1809458.400000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Sat Dec 14 16:55:47 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         12093.060000
+Iteration:   249    Objective     =       1819321.580000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Sat Dec 14 16:57:20 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         12093.060000
+Iteration:   249    Objective     =       1818972.140000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Sat Dec 14 16:59:33 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         12109.990000
+Iteration:   254    Objective     =       1820743.140000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Sat Dec 14 17:00:56 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         12101.990000
+Iteration:   247    Objective     =       1821593.840000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Sat Dec 14 17:02:17 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         12101.990000
+Iteration:   247    Objective     =       1821317.480000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Sat Dec 14 17:03:37 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         12103.990000
+Iteration:   252    Objective     =       1809653.680000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Sat Dec 14 17:04:58 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         12105.990000
+Iteration:   254    Objective     =       1804385.130000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Sat Dec 14 17:06:19 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         12075.990000
+Iteration:   244    Objective     =       1797280.930000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Sat Dec 14 17:07:41 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         12193.600000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Sat Dec 14 17:09:03 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         12129.600000
+Iteration:   245    Objective     =       1799798.380000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Sat Dec 14 17:10:24 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         12219.480000
+Iteration:   254    Objective     =       1804683.930000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Sat Dec 14 17:11:47 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         12239.480000
+Iteration:   255    Objective     =       1798228.980000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Sat Dec 14 17:13:10 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         12312.490000
+Iteration:   254    Objective     =       1795636.980000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Sat Dec 14 17:14:30 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         12278.470000
+Iteration:   252    Objective     =       1814647.180000
+Iteration:   324    Objective     =       1748462.780000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Sat Dec 14 17:15:53 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         12281.470000
+Iteration:   256    Objective     =       1810028.600000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Sat Dec 14 17:17:14 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         12339.490000
+Iteration:   261    Objective     =       1804100.990000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Sat Dec 14 17:18:38 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         12339.490000
+Iteration:   264    Objective     =       1799525.990000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Sat Dec 14 17:20:00 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         12413.490000
+Iteration:   260    Objective     =       1814916.490000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Sat Dec 14 17:21:23 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         12413.490000
+Iteration:   258    Objective     =       1805813.490000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Sat Dec 14 17:22:45 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         12413.490000
+Iteration:   258    Objective     =       1805813.490000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Sat Dec 14 17:24:09 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         12331.470000
+Iteration:   257    Objective     =       1807358.720000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Sat Dec 14 17:25:33 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         12427.280000
+Iteration:   260    Objective     =       1808207.440000
+Iteration:   335    Objective     =       1742423.350000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Sat Dec 14 17:26:55 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         12385.260000
+Iteration:   266    Objective     =       1793756.290000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Sat Dec 14 17:28:18 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         12385.260000
+Iteration:   266    Objective     =       1793756.290000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Sat Dec 14 17:29:41 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         12385.260000
+Iteration:   266    Objective     =       1793170.690000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Sat Dec 14 17:31:04 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         12439.280000
+Iteration:   261    Objective     =       1790178.470000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Sat Dec 14 17:32:29 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         12403.280000
+Iteration:   259    Objective     =       1803568.750000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Sat Dec 14 17:33:54 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         12403.280000
+Iteration:   259    Objective     =       1803568.750000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Sat Dec 14 17:35:18 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         12473.269999
+Iteration:   260    Objective     =       1806432.380000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Sat Dec 14 17:36:43 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         12473.269999
+Iteration:   257    Objective     =       1793172.100000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Sat Dec 14 17:38:08 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         12467.280000
+Iteration:   258    Objective     =       1824232.570000
+Iteration:   340    Objective     =       1741359.080000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Sat Dec 14 17:39:33 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         12467.280000
+Iteration:   258    Objective     =       1824232.570000
+Iteration:   340    Objective     =       1741359.080000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Sat Dec 14 17:40:58 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         12512.280000
+Iteration:   261    Objective     =       1823904.100000
+Iteration:   328    Objective     =       1749141.050000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Sat Dec 14 17:42:23 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         12466.280000
+Iteration:   260    Objective     =       1807093.410000
+Iteration:   334    Objective     =       1746978.290000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Sat Dec 14 17:43:50 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         12466.280000
+Iteration:   256    Objective     =       1801340.100000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Sat Dec 14 17:45:15 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         12486.280000
+Iteration:   266    Objective     =       1791754.390000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Sat Dec 14 17:46:39 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         12494.280000
+Iteration:   264    Objective     =       1812028.840000
+Iteration:   345    Objective     =       1737703.870000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Sat Dec 14 17:48:04 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         12494.280000
+Iteration:   266    Objective     =       1808676.730000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Sat Dec 14 17:49:31 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         12498.280000
+Iteration:   266    Objective     =       1811403.260000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Sat Dec 14 17:50:57 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         12504.280000
+Iteration:   262    Objective     =       1808534.320000
+Iteration:   340    Objective     =       1737867.910000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Sat Dec 14 17:52:25 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         12599.230000
+Iteration:   270    Objective     =       1806567.030000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Sat Dec 14 17:53:53 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         12599.230000
+Iteration:   267    Objective     =       1803771.890000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Sat Dec 14 17:55:21 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         12451.750000
+Iteration:   264    Objective     =       1782458.500000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Sat Dec 14 17:56:49 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         12451.750000
+Iteration:   275    Objective     =       1782764.820000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Sat Dec 14 19:35:08 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         12451.750000
+Iteration:   275    Objective     =       1782764.820000
+Iteration:   357    Objective     =       1719759.420000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Sat Dec 14 21:45:35 2019
+
+Using devex.
+
+Iteration log . . .
+Iteration:     1    Objective     =          -124.880000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Mon Dec 16 15:48:53 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         12089.060000
+Iteration:   243    Objective     =       1812364.000000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Mon Dec 16 19:11:55 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         12089.060000
+Iteration:   243    Objective     =       1812364.000000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Mon Dec 16 19:14:06 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         12021.060000
+Iteration:   247    Objective     =       1819699.400000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Mon Dec 16 19:16:15 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         12021.060000
+Iteration:   247    Objective     =       1819699.400000
+Iteration:   317    Objective     =       1753444.400000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Mon Dec 16 19:18:27 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         12091.060000
+Iteration:   249    Objective     =       1819813.400000
+Iteration:   318    Objective     =       1754610.400000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Mon Dec 16 19:20:37 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         12009.060000
+Iteration:   245    Objective     =       1809458.400000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Mon Dec 16 19:22:49 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         12093.060000
+Iteration:   249    Objective     =       1819321.580000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Mon Dec 16 19:25:02 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         12093.060000
+Iteration:   249    Objective     =       1818972.140000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Mon Dec 16 19:27:16 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         12109.990000
+Iteration:   254    Objective     =       1820743.140000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Mon Dec 16 19:29:32 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         12101.990000
+Iteration:   247    Objective     =       1821593.840000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Mon Dec 16 19:31:47 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         12101.990000
+Iteration:   247    Objective     =       1821317.480000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Mon Dec 16 19:34:02 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         12103.990000
+Iteration:   252    Objective     =       1809653.680000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Mon Dec 16 19:36:16 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         12105.990000
+Iteration:   254    Objective     =       1804385.130000
+Iteration:   330    Objective     =       1748725.130000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Mon Dec 16 19:38:30 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         12075.990000
+Iteration:   244    Objective     =       1797280.930000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Mon Dec 16 19:40:43 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         12193.600000
+Iteration:   246    Objective     =       1803988.930000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Mon Dec 16 19:42:55 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         12129.600000
+Iteration:   245    Objective     =       1799798.380000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Mon Dec 16 19:45:12 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         12219.480000
+Iteration:   254    Objective     =       1804683.930000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Mon Dec 16 19:47:34 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         12239.480000
+Iteration:   255    Objective     =       1798228.980000
+Iteration:   330    Objective     =       1746173.580000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Mon Dec 16 19:49:59 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         12312.490000
+Iteration:   254    Objective     =       1795636.980000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Mon Dec 16 19:52:20 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         12278.470000
+Iteration:   252    Objective     =       1814647.180000
+Iteration:   324    Objective     =       1748462.780000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Mon Dec 16 19:54:40 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         12281.470000
+Iteration:   256    Objective     =       1810028.600000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Mon Dec 16 19:57:01 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         12339.490000
+Iteration:   261    Objective     =       1804100.990000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Mon Dec 16 19:59:20 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         12339.490000
+Iteration:   264    Objective     =       1799525.990000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Mon Dec 16 20:01:42 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         12413.490000
+Iteration:   260    Objective     =       1814916.490000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Mon Dec 16 20:03:50 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         12413.490000
+Iteration:   258    Objective     =       1805813.490000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Mon Dec 16 20:06:05 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         12413.490000
+Iteration:   258    Objective     =       1805813.490000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Mon Dec 16 20:08:19 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         12331.470000
+Iteration:   257    Objective     =       1807358.720000
+Iteration:   335    Objective     =       1741826.080000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Mon Dec 16 20:10:34 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         12427.280000
+Iteration:   260    Objective     =       1808207.440000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Mon Dec 16 20:12:51 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         12385.260000
+Iteration:   266    Objective     =       1793756.290000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Mon Dec 16 20:15:09 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         12385.260000
+Iteration:   266    Objective     =       1793756.290000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Mon Dec 16 20:17:25 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         12385.260000
+Iteration:   266    Objective     =       1793170.690000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Mon Dec 16 20:19:45 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         12439.280000
+Iteration:   261    Objective     =       1790178.470000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Mon Dec 16 20:22:01 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         12403.280000
+Iteration:   259    Objective     =       1803568.750000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Mon Dec 16 20:24:19 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         12403.280000
+Iteration:   259    Objective     =       1803568.750000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Mon Dec 16 20:26:37 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         12473.269999
+Iteration:   260    Objective     =       1806432.380000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Mon Dec 16 20:28:57 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         12473.269999
+Iteration:   257    Objective     =       1793172.100000
+Iteration:   328    Objective     =       1739119.550000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Mon Dec 16 20:31:16 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         12467.280000
+Iteration:   258    Objective     =       1824232.570000
+Iteration:   340    Objective     =       1741359.080000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Mon Dec 16 20:33:35 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         12467.280000
+Iteration:   258    Objective     =       1824232.570000
+Iteration:   340    Objective     =       1741359.080000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Mon Dec 16 20:35:53 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         12512.280000
+Iteration:   261    Objective     =       1823904.100000
+Iteration:   328    Objective     =       1749141.050000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Mon Dec 16 20:38:08 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         12466.280000
+Iteration:   260    Objective     =       1807093.410000
+Iteration:   334    Objective     =       1746978.290000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Mon Dec 16 20:40:27 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         12466.280000
+Iteration:   256    Objective     =       1801340.100000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Mon Dec 16 20:42:45 2019
+
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Mon Dec 16 20:45:04 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         12494.280000
+Iteration:   264    Objective     =       1812028.840000
+Iteration:   345    Objective     =       1737703.870000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Mon Dec 16 20:47:23 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         12494.280000
+Iteration:   266    Objective     =       1808676.730000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Mon Dec 16 20:49:44 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         12498.280000
+Iteration:   266    Objective     =       1811403.260000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Mon Dec 16 20:52:05 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         12504.280000
+Iteration:   262    Objective     =       1808534.320000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Mon Dec 16 20:54:26 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         12599.230000
+Iteration:   270    Objective     =       1806567.030000
+Iteration:   351    Objective     =       1737115.800000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Mon Dec 16 20:56:47 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         12599.230000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Mon Dec 16 20:59:10 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         12451.750000
+Iteration:   264    Objective     =       1782458.500000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Mon Dec 16 21:01:35 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         12451.750000
+Iteration:   275    Objective     =       1782764.820000
+
+Dual simplex solved model.
+
+
+Log for 'Assignment1_p2' Clone_2 (V12.9.0.0) Tue Dec 17 14:03:36 2019
+
+
+Iteration log . . .
+Iteration:     1    Infeasibility =         12089.060000
+Iteration:   243    Objective     =       1812364.000000
+
+Dual simplex solved model.
+
