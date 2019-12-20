@@ -7,10 +7,10 @@ Authors (Group 31):  Adrián Chaves García-Mascaraque (5077982)
 
 The documents that are being submitted for Assignment 1 are:
 
-- Two pdfs. One called ... which is the report in which the results are explained as well as the procedure followed to obtained them and the other one called ''Assesment_Matrix_G31'' in which the workload distribution of each group member is described.
+- Two pdfs. One called ''Report_Assignment1_G31'' which is the report in which the results are explained as well as the procedure followed to obtained them and the other one called ''Assesment_Matrix_G31'' in which the workload distribution of each group member is described.
 
-- Five matlab codes. 
+- Five matlab codes: 
 
 	- For problem 1, we have used three codes, the main one is the one 			called ''Assignment1p1_G31'' which calls two functions, ''Constraints'' 		that describes each of the different mathematical constraints of the model 	and the function ''varindex_3'' which is used to allocate the different 		decision variables.
 
-	- For problem 2, two codes are employed, the main one is 		''Assignment1p2_G31'' and the function ''varindex_4'' which is used to 		allocate the different decision variables as in the previous problem.
+	- For problem 2, two codes are employed, the main one is 			''Assignment1p2_G31'' and the function ''varindex_4'' which is used to 			allocate the different decision variables as in the previous problem.
