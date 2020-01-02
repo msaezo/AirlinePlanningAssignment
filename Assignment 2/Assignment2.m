@@ -24,6 +24,7 @@ Runway_length = xlsread('AE4423_Ass2_APO.xlsx','Airport','B5:U5'); % Runway leng
 pos_hub = find(strcmp(Cities,Hub)); % This variable indicates the position of the hub in future vectors
 
 N = length(Airports); % Number of airports
+h_div = 240;
 %% Aircraft Data - Aircraft Characteristics
 
 % Aircraft 1: Regional turboprop
@@ -59,3 +60,21 @@ end
 % To compute the Demand per hour, I think that the best idea would be to
 % compute it when required, not the whole matrix because it would be huge
 % (20x20x24 = 9600)
+
+% Demand - The matrix obtained "Demand_h" gives the demand in each flight
+% depending on the hour. The final matrix has (20x20x240)
+Demand_h = zeros(N,N,h_div);
+indx = 1;
+for i = 1:N
+    for j = 1:N
+        indx = 1;
+        for h = 1:h_div/10
+            for p = 1:10
+                Demand_h(i,j,indx) = Demand_2014(i,j)*Hour_coeff(i,h);
+                indx = indx + 1;
+            end
+        end
+    end
+end
+
+
