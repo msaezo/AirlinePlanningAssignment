@@ -140,16 +140,20 @@ time_division = 6; % [min]
 min_per_day = 24*60; % [min] Minutes in a day
 n_stages = min_per_day/time_division; % Number of stages in which the state space is divided
 
-time_stages = linspace(24-1/10,0,n_stages); % It starts in 23.54 and ends in 0
+time_stages = linspace(24-1/10,0,n_stages); % It starts in 23:54 and ends in 0
+% time_stages = linspace(24,1/10,n_stages); % It starts in 24:00 and ends in 0:06  --> we dont need this vector
 
 % Minimum and maximum posible time stages for each airport (It depends on
 % the aircraft since the velocity and the TAT are different)
 airport_lim_tstage = zeros(N,2,AC_types);
+flight_time = zeros(N,AC_types); % Vector in which is saved the time that each aircraft spends flying from hub to any other aiport
 
 for k = 1:AC_types
-    time = ceil((15 + 15 + Distance(:,2)/Speed(k)*60 + Ave_TAT(k))/6);
-    airport_lim_tstage(:,:,k) = [1+time 240-time];
+    flight_time(:,k) = ceil((15 + 15 + Distance(:,2)/Speed(k)*60 + Ave_TAT(k))/6);
+    airport_lim_tstage(:,:,k) = [1+flight_time(:,k) 240-flight_time(:,k)];
 end
+
+flight_time(pos_hub,:)=0;
 
 %% 
 % The following two variables are the controllers that indicate if there 
@@ -170,11 +174,11 @@ while profitable == 1 && AC_available == 1
 
 %     Dynamic programming
 % Aircraft 1
-[Profit_ac1, Nodes_ac1, Schedule_ac1] = Dynamic_Programming(Rev_ac1, Cost(:,:,1), airport_lim_tstage(:,:,1), av_airports_ac1, pos_hub, n_stages);
+[Profit_ac1, Nodes_ac1, Schedule_ac1, profit_check1, node_schedule1, t_stages_schedule] = Dynamic_Programming(Rev_ac1, Cost(:,:,1), airport_lim_tstage(:,:,1), av_airports_ac1, flight_time(:,1), pos_hub, n_stages);
 % Aircraft 2
-[Profit_ac2, Nodes_ac2, Schedule_ac2] = Dynamic_Programming(Rev_ac2, Cost(:,:,2), airport_lim_tstage(:,:,2), av_airports_ac2, pos_hub, n_stages);
+[Profit_ac2, Nodes_ac2, Schedule_ac2] = Dynamic_Programming(Rev_ac2, Cost(:,:,2), airport_lim_tstage(:,:,2), av_airports_ac2, flight_time(:,2), pos_hub, n_stages);
 % Aircraft 3
-[Profit_ac3, Nodes_ac3, Schedule_ac3] = Dynamic_Programming(Rev_ac3, Cost(:,:,3), airport_lim_tstage(:,:,3), av_airports_ac3, pos_hub, n_stages);
+[Profit_ac3, Nodes_ac3, Schedule_ac3] = Dynamic_Programming(Rev_ac3, Cost(:,:,3), airport_lim_tstage(:,:,3), av_airports_ac3, flight_time(:,1), pos_hub, n_stages);
 
 
 
@@ -258,7 +262,7 @@ end
 end
 
 % Function that is in charge of the dynamic programming
-function [Profit, Nodes , Schedule] = Dynamic_Programming(Rev, Cost, airport_lim_tstage, av_airport, pos_hub, n_stages)
+function [Profit, Nodes , Schedule, profit_check, node_schedule, t_stages_schedule] = Dynamic_Programming(Rev, Cost, airport_lim_tstage, av_airport, flight_time, pos_hub, n_stages)
 
 Profit = zeros(length(av_airport), n_stages);
 Nodes = zeros(length(av_airport), n_stages); % Will contain the nodes to which is the most profitable to fly to
@@ -275,32 +279,37 @@ for t = 1:n_stages % Study each time stage
         Profit(new_pos_hub,pos) = 0; % Since it has to end in the hub
         
     else % For the rest of time stages
-        
+        % We need to take into account the time the aircraft takes!!!!!!!
         for i = 1:length(av_airport) % Departure airport
             if av_airport(i) == pos_hub % If the airport studied is the hub, we have to evaluate all available airports
 
                 for j = 1:length(av_airport) % Arrival airport
-                    if pos >= airport_lim_tstage(av_airport(j),1) && pos <= airport_lim_tstage(av_airport(j),2) % We need to specify because that vector contains all the airports
+                    if pos >= airport_lim_tstage(av_airport(j),1) && pos <= airport_lim_tstage(av_airport(j),2) && j~=pos_hub % We need to specify because that vector contains all the airports
                     % We are getting the profit that we obtain when the aircraft departs from
                     % the hub to each airport at each time stage. Rev(Dep,Arr,Time) Cost(Sym)
                         ind_profit = Rev(av_airport(i),av_airport(j),hour) - Cost(av_airport(i),av_airport(j));
-                        profit_from_each_airport(j) = Profit(j,pos+1) + ind_profit;
+                        profit_from_each_airport(j,pos) = Profit(j,pos+flight_time(av_airport(j))) + ind_profit;
                     else
-                        profit_from_each_airport(j) = Profit(j,pos+1);
+                        profit_from_each_airport(j,pos)= Profit(j,pos+1);
                     end
                 end
 
-                    Profit(i,pos) = max(profit_from_each_airport);
-                    Nodes(i,pos) = av_airport(Profit(i,pos)==profit_from_each_airport);
+                    Profit(i,pos) = max(profit_from_each_airport(:,pos));
+                    
+                    posible_nodes = av_airport(Profit(i,pos)==profit_from_each_airport(:,pos));
+                    Nodes(i,pos) = posible_nodes(end);
+%                     Nodes(i,pos) = find(Profit(i,pos)==profit_from_each_airport);
+
 
             else % In case, it is not the hub, only the hub and the same airport are studied
 
-                profit_same_airport = Profit(i,pos+1); % This means that the aircraft does not fly
 
                 if pos >= airport_lim_tstage(av_airport(i),1) && pos <= airport_lim_tstage(av_airport(i),2)
-                    profit_hub = Profit(new_pos_hub,pos+1) + Rev(av_airport(i),pos_hub,hour) - Cost(av_airport(i),pos_hub);
+                    profit_hub = Profit(new_pos_hub,pos+flight_time(av_airport(i))) + Rev(av_airport(i),pos_hub,hour) - Cost(av_airport(i),pos_hub);
+                    profit_same_airport = Profit(i,pos+1); % This means that the aircraft does not fly
                 else
                     profit_hub = -100000;
+                    profit_same_airport = -100000;
                 end
 
                 Profit(i,pos) = max([profit_same_airport profit_hub]);
@@ -316,10 +325,37 @@ for t = 1:n_stages % Study each time stage
     end
 end
 
-% Schedule = 
-% Profit_updated =
+% Schedule  
+% Now the schedule can be computed from the previous results.
+% When the profit keeps the same, it means that the aircraft does not fly.
+% When it changes, we observe the Nodes matrix and save where the aircraft
+% has to fly. Then, we need to compute the time it takes to reach that
+% second airport and the profit that we would get.
+next_node = 1;
+node_schedule(next_node) = pos_hub; % Initial node
+n_flights = 0;
+t = 1;
+while t < n_stages
+    max_profit1 = max(Profit(:,t));
+    max_profit2 = max(Profit(:,t+1));
+    if max_profit1 ~= max_profit2
+        
+        next_node = next_node + 1;
+        n_flights = n_flights + 1;
+        node_schedule(next_node) = Nodes(max_profit1==Profit(:,t),t);
+        
+        profit_check(n_flights) = Rev(node_schedule(next_node-1),node_schedule(next_node),floor(t/10)+1)-Cost(node_schedule(next_node-1),node_schedule(next_node));
+        t_stages_schedule(n_flights,1) = t; % Departure time stage
+        var = sum(node_schedule(next_node-1)+node_schedule(next_node))-pos_hub; % This variable is used to take the time of that flight
+        t = t + flight_time(var);
+        t_stages_schedule(n_flights,2) = t; % Arrival time stage
+    else
+        t = t + 1;
+    end
+end
 Schedule = 1;
 
+% Profit_updated = We have to substract the leasing cost and check the demand.
 
 
 
